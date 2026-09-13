@@ -1,4 +1,5 @@
 import { Dictionary } from "@interfaces/dictionary.types";
+import { localesHeader } from "@data/dataLanguages";
 export const en: Dictionary = {
   errors: {
     fill_all_fields: "Please fill in all fields",
@@ -10,6 +11,18 @@ export const en: Dictionary = {
   },
   pages: {
     home: {
+      banners: [
+        {
+          id: 0,
+          src: "/images/main-banner-1.webp",
+          alt: "banner",
+        },
+        {
+          id: 1,
+          src: "/images/main-banner-2.webp",
+          alt: "banner",
+        },
+      ],
       features: [
         "free shipping worldwide",
         "cash on delivery",
@@ -110,18 +123,164 @@ export const en: Dictionary = {
         },
       },
     },
+    about: {
+      description: {
+        url: "/images/about-Us.avif",
+        title: "About Us",
+        subtitle: "Who We Are",
+        description:
+          "Your sound starts here We created Guitro so that every guitarist—from a beginner picking out their first acoustic to a seasoned gigging pro—could find an instrument with the perfect sound. Our catalog features electric guitars, acoustics, basses, and all the essential gear for the studio and the stage. We don’t just sell guitars; we help you find your unique tone.",
+      },
+      service: {
+        title: "Our Services",
+        list: [
+          {
+            url: "/icons/iconLamp.svg",
+            title: "Creative Ideas",
+            description:
+              "Discover new sounds, experiment with different tones, and find the guitar that brings your musical ideas to life. From classic styles to modern setups, we’re here to inspire your next riff, song, or performance.",
+          },
+          {
+            url: "/icons/iconMonitor.svg",
+            title: "Web Development",
+            description:
+              "We built a fast, modern online store designed to make discovering and buying guitars simple and enjoyable. From smooth navigation to responsive design, every part of the experience is optimized for musicians on any device.",
+          },
+          {
+            url: "/icons/iconHeartOrange.svg",
+            title: "Made With Passion",
+            description:
+              "We’re passionate about guitars and the music they create. Every part of our store is designed with musicians in mind — from discovering your next instrument to finding the perfect sound.",
+          },
+          {
+            url: "/icons/iconGears.svg",
+            title: "Powerfull Options",
+            description:
+              "Explore different guitars, gear, and accessories to create a setup that matches your style and helps you get the sound you’re looking for.",
+          },
+          {
+            url: "/icons/iconSnow.svg",
+            title: "Unique Design",
+            description:
+              "Every guitar has its own character. Discover instruments with distinctive designs, finishes, and details that make your style truly your own.",
+          },
+          {
+            url: "/icons/iconMonitor.svg",
+            title: "Customizable Options",
+            description:
+              "Explore products, compare your options, and find the gear that fits your style. Our online store makes it easy to create a setup that feels uniquely yours.",
+          },
+        ],
+      },
+      team: {
+        title: "Our Team",
+        list: [
+          {
+            url: "/images/team/team-2.webp",
+            name: "Michael Brooks",
+            position: "Founder & Guitar Expert",
+          },
+          {
+            url: "/images/team/team-1.webp",
+            name: "Sophie Bennett",
+            position: "Customer Experience Manager",
+          },
+          {
+            url: "/images/team/team-3.webp",
+            name: "Lukas Steiner",
+            position: "Product Specialist",
+          },
+          {
+            url: "/images/team/team-4.webp",
+            name: "Emma Sullivan",
+            position: "Creative & Web Director",
+          },
+        ],
+      },
+    },
+    privacyPolicy: {
+      title: "Privacy Policy",
+      updated: {
+        text: "Last updated:",
+        data: "October 5 2026",
+      },
+      informationCollect: {
+        title: "Information We Collect",
+        paragraphOne:
+          "When you use our website, we may collect information that you provide when creating an account or placing an order, such as your name, email address, shipping information, and order details.",
+        paragraphTwo:
+          "We may also collect technical information such as your IP address, browser type, and basic information about how you use our website.",
+      },
+      howUseInformation: {
+        title: "How We Use Your Information",
+        subtitle: "We use your information to:",
+        paragraph:
+          "create and manage your account, process and manage orders, communicate with you about your orders, provide customer support, maintain and improve our website, protect our website from unauthorized activity.",
+      },
+      accounts: {
+        title: "Accounts",
+        paragraphOne:
+          "If you create an account, we store the information necessary to provide account functionality and manage your orders.",
+        paragraphTwo:
+          "You are responsible for keeping your account credentials secure.",
+      },
+      cookies: {
+        title: "Cookies",
+        paragraphOne:
+          "We use cookies and similar technologies that are necessary for the website to function properly, including maintaining your authentication session and remembering certain preferences.",
+        paragraphTwo:
+          "We may also use cookies required for website performance and functionality.",
+      },
+      dataSharing: {
+        title: "Data Sharing",
+        subtitle: "We do not sell your personal information.",
+        paragraphOne:
+          "Your information may be processed by trusted service providers that help us operate the website, provide hosting, database, payment, authentication, or other necessary services.",
+        paragraphTwo:
+          "These providers only receive information necessary to perform their services.",
+      },
+      dataRetention: {
+        title: "Data Retention",
+        paragraph:
+          "We retain personal information for as long as necessary to provide our services, manage orders, maintain accounts, and comply with applicable legal and security requirements.",
+      },
+      yourRights: {
+        title: "Your Rights",
+        paragraphOne:
+          "Depending on applicable law, you may have the right to request access to, correction of, or deletion of your personal information.",
+        paragraphTwo:
+          "To make a privacy-related request, please contact us through the contact information provided on our website.",
+      },
+      security: {
+        title: "Security",
+        paragraphOne:
+          "We take reasonable technical and organizational measures to protect your personal information from unauthorized access, loss, or misuse.",
+        paragraphTwo:
+          "However, no method of transmitting or storing information online can be guaranteed to be completely secure.",
+      },
+      changesPolicy: {
+        title: "Changes to This Policy",
+        paragraph:
+          "We may update this Privacy Policy from time to time. Any changes will be published on this page with an updated date.",
+      },
+      contactUs: {
+        title: "Contact Us",
+        paragraph:
+          "If you have any questions about this Privacy Policy or how we handle your information, please contact us through the contact information provided on our website.",
+      },
+    },
   },
   components: {
     header: {
       topBar: {
         welcome: "Welcome to our online store!",
-        tel: "Customer Support: 123-456-7890",
+        tel: "Customer Support: +43 1 545 1700",
         textAccount: "My account",
         textContact: "Contact Us",
       },
       language: {
         selectedLanguage: "EN",
-        languages: ["EN", "DE"],
+        languages: localesHeader,
       },
       burger: {
         links: [

@@ -11,7 +11,7 @@ type ProductBase = Omit<Product, "price" | "oldPrice"> & {
   price: number;
   oldPrice: number | null;
 };
-type TranslationsData = Omit<ProductTranslation, "id" | "productId" | "locale">;
+type TranslationsData = Omit<ProductTranslation, "id" | "locale">;
 type FlattenedProduct = ProductBase & TranslationsData;
 
 interface PropsCard {
@@ -27,8 +27,8 @@ export default function Card(props: PropsCard) {
           className={styles.card__image}
           src={props.item.image}
           alt={props.item.name}
-          width={160}
-          height={210}
+          width={1200}
+          height={1800}
         />
         <div className={styles.card__wrapTitle}>
           <h1 className={styles.card__title}>{props.item.name}</h1>

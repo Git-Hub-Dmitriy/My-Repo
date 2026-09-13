@@ -7,11 +7,11 @@ import IconQuote from "@icons/iconQuote.svg";
 import Autoplay from "embla-carousel-autoplay";
 
 interface PropsTestimonials {
-  dict: PageDict<"home">["testimonials"];
+  translate: PageDict<"home">["testimonials"];
 }
 
 export default function Testimonials(props: PropsTestimonials) {
-  const testimonials = props.dict.slides;
+  const testimonials = props.translate.slides;
   const [emblaRef] = useEmblaCarousel(
     {
       loop: true,
@@ -28,7 +28,7 @@ export default function Testimonials(props: PropsTestimonials) {
 
   return (
     <section className={styles.testimonials}>
-      <h1 className={styles.testimonials__title}>{props.dict.title}</h1>
+      <h1 className={styles.testimonials__title}>{props.translate.title}</h1>
       <div className={styles.testimonials__viewport} ref={emblaRef}>
         <div className={styles.testimonials__container}>
           {testimonials.map((slide, index) => (
@@ -38,8 +38,8 @@ export default function Testimonials(props: PropsTestimonials) {
                 src={slide.image}
                 alt={"Slide image"}
                 priority={index === 0}
-                width={100}
-                height={100}
+                width={800}
+                height={600}
               />
               <IconQuote className={styles.testimonials__quote} />
               <h2 className={styles.testimonials__text}>{slide.text}</h2>

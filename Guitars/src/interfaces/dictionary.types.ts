@@ -13,6 +13,7 @@ export interface Dictionary {
   };
   pages: {
     home: {
+      banners: Array<{ id: number; src: string; alt: string }>;
       features: Array<string>;
       bestseller: Array<{
         id: number;
@@ -77,6 +78,85 @@ export interface Dictionary {
           email: string;
           saveName: string;
         };
+      };
+    };
+    about: {
+      description: {
+        title: string;
+        subtitle: string;
+        description: string;
+        url: string;
+      };
+      service: {
+        title: string;
+        list: Array<{
+          url: string;
+          title: string;
+          description: string;
+        }>;
+      };
+      team: {
+        title: string;
+        list: Array<{
+          url: string;
+          name: string;
+          position: string;
+        }>;
+      };
+    };
+    privacyPolicy: {
+      title: string;
+      updated: {
+        text: string;
+        data: string;
+      };
+      informationCollect: {
+        title: string;
+        paragraphOne: string;
+        paragraphTwo: string;
+      };
+      howUseInformation: {
+        title: string;
+        subtitle: string;
+        paragraph: string;
+      };
+      accounts: {
+        title: string;
+        paragraphOne: string;
+        paragraphTwo: string;
+      };
+      cookies: {
+        title: string;
+        paragraphOne: string;
+        paragraphTwo: string;
+      };
+      dataSharing: {
+        title: string;
+        subtitle: string;
+        paragraphOne: string;
+        paragraphTwo: string;
+      };
+      dataRetention: {
+        title: string;
+        paragraph: string;
+      };
+      yourRights: {
+        title: string;
+        paragraphOne: string;
+        paragraphTwo: string;
+      };
+      security: {
+        title: string;
+        paragraphOne: string;
+        paragraphTwo: string;
+      };
+      changesPolicy: {
+        title: string;
+        paragraph: string;
+      };
+      contactUs: {
+        title: string;
+        paragraph: string;
       };
     };
   };

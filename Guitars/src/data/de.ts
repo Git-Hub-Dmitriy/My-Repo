@@ -1,4 +1,5 @@
 import { Dictionary } from "@interfaces/dictionary.types";
+import { localesHeader } from "@data/dataLanguages";
 export const de: Dictionary = {
   errors: {
     fill_all_fields: "Bitte füllen Sie alle Felder aus.",
@@ -10,6 +11,18 @@ export const de: Dictionary = {
   },
   pages: {
     home: {
+      banners: [
+        {
+          id: 0,
+          src: "/images/main-banner-1.webp",
+          alt: "banner",
+        },
+        {
+          id: 1,
+          src: "/images/main-banner-2.webp",
+          alt: "banner",
+        },
+      ],
       features: [
         "Weltweiter kostenloser Versand",
         "Nachnahme",
@@ -110,17 +123,163 @@ export const de: Dictionary = {
         },
       },
     },
+    about: {
+      description: {
+        url: "/images/about-Us.avif",
+        title: "Über uns",
+        subtitle: "Wer wir sind",
+        description:
+          "Hier beginnt dein Sound. Wir haben Guitro ins Leben gerufen, damit jeder Gitarrist – vom Anfänger, der seine erste Akustikgitarre aussucht, bis zum erfahrenen Profi auf der Bühne – ein Instrument mit dem perfekten Klang findet. Unser Sortiment umfasst E-Gitarren, Akustikgitarren, Bässe sowie das gesamte wichtige Equipment für Studio und Bühne. Wir verkaufen nicht einfach nur Gitarren; wir helfen dir dabei, deinen ganz eigenen Sound zu finden.",
+      },
+      service: {
+        title: "Unsere Leistungen",
+        list: [
+          {
+            url: "/icons/iconLamp.svg",
+            title: "Kreative Ideen",
+            description:
+              "Entdecken Sie neue Sounds, experimentieren Sie mit verschiedenen Klangfarben und finden Sie die Gitarre, die Ihre musikalischen Ideen zum Leben erweckt. Von klassischen Stilen bis hin zu modernen Setups – wir sind hier, um Sie zu Ihrem nächsten Riff, Song oder Auftritt zu inspirieren.",
+          },
+          {
+            url: "/icons/iconMonitor.svg",
+            title: "Webentwicklung",
+            description:
+              "Wir haben einen schnellen, modernen Online-Shop entwickelt, der das Entdecken und Kaufen von Gitarren einfach und angenehm macht. Von der reibungslosen Navigation bis hin zum Responsive Design ist das gesamte Erlebnis für Musiker optimiert – auf jedem Gerät.",
+          },
+          {
+            url: "/icons/iconHeartOrange.svg",
+            title: "Mit Leidenschaft hergestellt",
+            description:
+              "Wir lieben Gitarren und die Musik, die mit ihnen entsteht. Unser gesamtes Geschäft ist auf die Bedürfnisse von Musikern ausgerichtet – von der Entdeckung Ihres nächsten Instruments bis hin zur Suche nach dem perfekten Sound.",
+          },
+          {
+            url: "/icons/iconGears.svg",
+            title: "Leistungsstarke Optionen",
+            description:
+              "Entdecke verschiedene Gitarren, Ausrüstung und Zubehör, um ein Setup zusammenzustellen, das zu deinem Stil passt und dir hilft, den gewünschten Sound zu erzielen.",
+          },
+          {
+            url: "/icons/iconSnow.svg",
+            title: "Einzigartiges Design",
+            description:
+              "Jede Gitarre hat ihren eigenen Charakter. Entdecken Sie Instrumente mit unverwechselbarem Design, speziellen Lackierungen und Details, die Ihren Stil zu etwas ganz Persönlichem machen.",
+          },
+          {
+            url: "/icons/iconMonitor.svg",
+            title: "Anpassbare Optionen",
+            description:
+              "Entdecken Sie Produkte, vergleichen Sie Ihre Optionen und finden Sie die Ausrüstung, die zu Ihrem Stil passt. Unser Online-Shop macht es Ihnen leicht, sich ein Setup zusammenzustellen, das ganz individuell zu Ihnen passt.",
+          },
+        ],
+      },
+      team: {
+        title: "Unser Team",
+        list: [
+          {
+            url: "/images/team/team-2.webp",
+            name: "Michael Brooks",
+            position: "Gründer & Gitarrenexperte",
+          },
+          {
+            url: "/images/team/team-1.webp",
+            name: "Sophie Bennett",
+            position: "Manager für Kundenerlebnisse",
+          },
+          {
+            url: "/images/team/team-3.webp",
+            name: "Lukas Steiner",
+            position: "Produktspezialist",
+          },
+          {
+            url: "/images/team/team-4.webp",
+            name: "Emma Sullivan",
+            position: "Kreativ- und Webdirektor",
+          },
+        ],
+      },
+    },
+    privacyPolicy: {
+      title: "Datenschutzerklärung",
+      updated: {
+        text: "Zuletzt aktualisiert:",
+        data: "Oktober 2026",
+      },
+      informationCollect: {
+        title: "Von uns erfasste Informationen",
+        paragraphOne:
+          "Wenn Sie unsere Website nutzen, erfassen wir möglicherweise Informationen, die Sie bei der Erstellung eines Kontos oder der Aufgabe einer Bestellung angeben, wie z. B. Ihren Namen, Ihre E-Mail-Adresse, Versandinformationen und Bestelldetails.",
+        paragraphTwo:
+          "Zudem erfassen wir technische Informationen wie Ihre IP-Adresse, den Browsertyp und grundlegende Informationen darüber, wie Sie unsere Website nutzen.",
+      },
+      howUseInformation: {
+        title: "Verwendung Ihrer Informationen",
+        subtitle: "Wir verwenden Ihre Informationen, um:",
+        paragraph:
+          "Ihr Konto zu erstellen und zu verwalten, Bestellungen zu bearbeiten und zu verwalten, mit Ihnen bezüglich Ihrer Bestellungen zu kommunizieren, Kundensupport zu leisten, unsere Website zu warten und zu verbessern sowie unsere Website vor unbefugten Aktivitäten zu schützen.",
+      },
+      accounts: {
+        title: "Konten",
+        paragraphOne:
+          "Wenn Sie ein Konto erstellen, speichern wir die Informationen, die zur Bereitstellung der Kontofunktionen und zur Verwaltung Ihrer Bestellungen erforderlich sind.",
+        paragraphTwo:
+          "Sie sind dafür verantwortlich, Ihre Zugangsdaten sicher aufzubewahren.",
+      },
+      cookies: {
+        title: "Cookies",
+        paragraphOne:
+          "Wir verwenden Cookies und ähnliche Technologien, die für das ordnungsgemäße Funktionieren der Website erforderlich sind, einschließlich der Aufrechterhaltung Ihrer Authentifizierungssitzung und der Speicherung bestimmter Einstellungen.",
+        paragraphTwo:
+          "Wir können auch Cookies verwenden, die für die Leistung und Funktionalität der Website erforderlich sind.",
+      },
+      dataSharing: {
+        title: "Weitergabe von Daten",
+        subtitle: "Wir verkaufen Ihre personenbezogenen Daten nicht.",
+        paragraphOne:
+          "Ihre Daten können von vertrauenswürdigen Dienstleistern verarbeitet werden, die uns beim Betrieb der Website unterstützen und Hosting-, Datenbank-, Zahlungs-, Authentifizierungs- oder andere notwendige Dienste bereitstellen.",
+        paragraphTwo:
+          "Diese Dienstleister erhalten nur die Informationen, die zur Erbringung ihrer Dienstleistungen erforderlich sind.",
+      },
+      dataRetention: {
+        title: "Datenspeicherung",
+        paragraph:
+          "Wir bewahren personenbezogene Daten so lange auf, wie es für die Erbringung unserer Dienstleistungen, die Verwaltung von Bestellungen, die Führung von Konten sowie zur Einhaltung geltender rechtlicher und sicherheitsrelevanter Anforderungen erforderlich ist.",
+      },
+      yourRights: {
+        title: "Ihre Rechte",
+        paragraphOne:
+          "Je nach geltendem Recht haben Sie möglicherweise das Recht, Auskunft über Ihre personenbezogenen Daten zu verlangen sowie deren Berichtigung oder Löschung zu fordern.",
+        paragraphTwo:
+          "Um eine datenschutzbezogene Anfrage zu stellen, kontaktieren Sie uns bitte über die auf unserer Website angegebenen Kontaktdaten.",
+      },
+      security: {
+        title: "Sicherheit",
+        paragraphOne:
+          "Wir treffen angemessene technische und organisatorische Maßnahmen, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Verlust oder Missbrauch zu schützen.",
+        paragraphTwo:
+          "Es kann jedoch keine Methode der Online-Übertragung oder -Speicherung von Informationen als absolut sicher garantiert werden.",
+      },
+      changesPolicy: {
+        title: "Änderungen dieser Datenschutzerklärung",
+        paragraph:
+          "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Änderungen werden auf dieser Seite unter Angabe des Aktualisierungsdatums veröffentlicht.",
+      },
+      contactUs: {
+        title: "Kontakt",
+        paragraph:
+          "Wenn Sie Fragen zu dieser Datenschutzerklärung oder zum Umgang mit Ihren Daten haben, kontaktieren Sie uns bitte über die auf unserer Website angegebenen Kontaktdaten.",
+      },
+    },
   },
   components: {
     header: {
       topBar: {
         welcome: "Willkommen in unserem Online-Shop!",
-        tel: "Kundensupport: 123-456-7890",
+        tel: "Kundensupport: +43 1 545 1700",
         textAccount: "Mein Konto",
         textContact: "Kontaktieren Sie uns",
       },
       language: {
-        languages: ["EN", "DE"],
+        languages: localesHeader,
         selectedLanguage: "DE",
       },
       burger: {

@@ -1,22 +1,15 @@
+import { PageDict } from "@interfaces/dictionary.types";
 import styles from "./Banner.module.css";
 import Carousel from "@components/Carousel/Carousel";
-const slides = [
-  {
-    id: 0,
-    src: "/images/main-banner-1.webp",
-    alt: "slide",
-  },
-  {
-    id: 1,
-    src: "/images/main-banner-2.webp",
-    alt: "slide",
-  },
-];
 
-export default async function Banner() {
+interface PropsBanner {
+  translate: PageDict<"home">["banners"];
+}
+
+export default async function Banner(props: PropsBanner) {
   return (
     <section className={styles.banner}>
-      <Carousel slides={slides} />
+      <Carousel slides={props.translate} />
     </section>
   );
 }

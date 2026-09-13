@@ -1,3 +1,3 @@
-export default function sku() {
-  return null;
-}
+import Product from "./layout";
+
+export default Product;

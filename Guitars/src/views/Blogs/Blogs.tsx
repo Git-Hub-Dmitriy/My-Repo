@@ -1,6 +1,5 @@
 import styles from "./Blogs.module.css";
 import { Dictionary } from "@interfaces/dictionary.types";
-import { Suspense } from "react";
 import Navigate from "@components/Navigate/Navigate";
 
 interface PropsBlogs {

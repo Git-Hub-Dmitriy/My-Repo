@@ -58,7 +58,7 @@
     .productCarousel__viewport .productCarousel__container {
       width: 100%;
       .productCarousel__slide {
-        flex: 0 0 32%;
+        flex: 0 0 31%;
         min-width: 0;
         position: relative;
         margin-left: 20px;
@@ -69,10 +69,10 @@
       height: clamp(30px, 1.95cqw, 50px);
     }
     .productCarousel__prev {
-      left: 6%;
+      left: 1%;
     }
     .productCarousel__next {
-      right: 6%;
+      right: 1%;
     }
   }
 }

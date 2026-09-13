@@ -2,4 +2,14 @@
   .lostPass {
     width: 100%;
   }
+  @container (min-width: 2000px) {
+    .lostPass {
+      font-size: 1.2rem;
+    }
+  }
+  @container (min-width: 2300px) {
+    .lostPass {
+      font-size: 1.6rem;
+    }
+  }
 }

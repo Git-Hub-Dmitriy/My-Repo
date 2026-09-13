@@ -31,8 +31,8 @@ export default function Brands() {
                 src={slide.image}
                 alt={"Brand Image"}
                 priority={false}
-                width={80}
-                height={40}
+                width={300}
+                height={200}
               />
             </div>
           ))}

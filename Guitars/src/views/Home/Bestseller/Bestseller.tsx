@@ -2,13 +2,13 @@ import styles from "./Bestseller.module.css";
 import { PageDict } from "@interfaces/dictionary.types";
 
 interface PropsBestseller {
-  dict: PageDict<"home">["bestseller"];
+  translate: PageDict<"home">["bestseller"];
 }
 
 export default function Bestseller(props: PropsBestseller) {
   return (
     <section className={styles.bestseller}>
-      {props.dict.map((item) => (
+      {props.translate.map((item) => (
         <div
           style={{ backgroundImage: `url(${item.url})` }}
           className={styles.bestseller__item}

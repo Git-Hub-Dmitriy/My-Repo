@@ -4,7 +4,7 @@ import { ComponentDict } from "@interfaces/dictionary.types";
 import { useState } from "react";
 
 interface PropsSubscribe {
-  dict: ComponentDict<"subscribe">;
+  translate: ComponentDict<"subscribe">;
 }
 
 export default function Subscribe(props: PropsSubscribe) {
@@ -12,8 +12,8 @@ export default function Subscribe(props: PropsSubscribe) {
 
   return (
     <section className={styles.subscribe}>
-      <h1 className={styles.subscribe__title}>{props.dict.title}</h1>
-      <h2 className={styles.subscribe__text}>{props.dict.text}</h2>
+      <h1 className={styles.subscribe__title}>{props.translate.title}</h1>
+      <h2 className={styles.subscribe__text}>{props.translate.text}</h2>
       <form className={styles.subscribe__form} action="">
         <input
           onChange={(e) => setInput(e.target.value)}
@@ -21,10 +21,10 @@ export default function Subscribe(props: PropsSubscribe) {
           type="email"
           name="email"
           value={input}
-          placeholder={props.dict.placeholder}
+          placeholder={props.translate.placeholder}
         />
         <button className={styles.subscribe__button}>
-          {props.dict.button}
+          {props.translate.button}
         </button>
       </form>
     </section>

@@ -5,11 +5,11 @@ import { Dictionary } from "@interfaces/dictionary.types";
 import { getDictionary } from "@utils/getDictionary";
 import Header from "@components/Header/Header";
 import Footer from "@components/Footer/Footer";
-import dynamic from "next/dynamic";
-const ScrollUp = dynamic(() => import("@components/buttons/ScrollUp/ScrollUp"));
+import ScrollUp from "@components/buttons/ScrollUp/ScrollUp";
+import { staticParams, defaultLocale } from "@data/dataLanguages";
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "ua" }];
+  return staticParams;
 }
 
 export default async function RootLayout({
@@ -20,10 +20,14 @@ export default async function RootLayout({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
-  const dict: Dictionary = await getDictionary(locale ? locale : "en");
+  const dict: Dictionary = await getDictionary(locale ? locale : defaultLocale);
 
   return (
-    <html lang="en" className={RUBIK.variable} suppressHydrationWarning={true}>
+    <html
+      lang={locale}
+      className={RUBIK.variable}
+      suppressHydrationWarning={true}
+    >
       <body>
         <PageContainer>
           <Header dictionary={dict.components.header} />

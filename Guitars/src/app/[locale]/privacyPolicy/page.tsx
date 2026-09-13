@@ -17,7 +17,7 @@ export default async function privacyPolicy({
 
   return (
     <>
-      <PrivacyPolicy dict={dict} />
+      <PrivacyPolicy translate={dict.pages.privacyPolicy} />
     </>
   );
 }

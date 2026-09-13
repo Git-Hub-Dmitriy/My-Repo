@@ -1,33 +1,18 @@
-import { prisma } from "@lib/prisma";
-import { Prisma } from "@generated/prisma/client";
+import { PageDict } from "@interfaces/dictionary.types";
+import { cacheLife } from "next/cache";
+import getPosts from "@services/internal/getPosts";
 import dynamic from "next/dynamic";
 const LatestNews = dynamic(() => import("./LatestNews"));
-import { PageDict } from "@interfaces/dictionary.types";
-
 interface PropsLatestDynamic {
-  dict: PageDict<"home">["latestNews"];
+  translate: PageDict<"home">["latestNews"];
   locale: string;
 }
 
 export default async function LatestDynamic(props: PropsLatestDynamic) {
-  const rawBlogs: Prisma.PostGetPayload<{ include: { translations: true } }>[] =
-    await prisma.post.findMany({
-      include: {
-        translations: {
-          where: { locale: props.locale },
-        },
-      },
-    });
+  "use cache";
+  cacheLife("hours");
 
-  const blogs = rawBlogs.map((post) => {
-    const { translations, ...dataPost } = post;
-    const translation = translations[0];
-    const { id: _tId, locale: _loc, ...translationFields } = translation;
-    return {
-      ...dataPost,
-      ...translationFields,
-    };
-  });
+  const posts = await getPosts({ locale: props.locale, amount: 10 });
 
-  return <LatestNews blogs={blogs} dict={props.dict} />;
+  return <LatestNews blogs={posts} translate={props.translate} />;
 }

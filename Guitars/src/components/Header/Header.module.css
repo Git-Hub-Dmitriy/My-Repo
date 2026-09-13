@@ -5,6 +5,11 @@
     grid-template-rows: auto auto;
     background-color: var(--background-color);
   }
+  @container (min-width: 1440px) {
+    .header {
+      padding-inline: clamp(30px, 7.81cqw, 200px);
+    }
+  }
   @container (min-width: 2000px) {
     .header {
       font-size: 1.2rem;

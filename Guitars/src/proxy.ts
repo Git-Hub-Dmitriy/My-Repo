@@ -1,10 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { auth } from "./auth";
-
-const locales = ["en", "de"];
-const defaultLocale = "en";
-
+import { locales, defaultLocale } from "@data/dataLanguages";
 interface ExtendedSession {
   user?: {
     name?: string | null;
@@ -16,7 +13,6 @@ interface ExtendedSession {
 
 export default async function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl;
-
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
@@ -43,15 +39,18 @@ export default async function proxy(req: NextRequest) {
   const hasLocale = locales.some(
     (l) => pathname.startsWith(`/${l}/`) || pathname === `/${l}`,
   );
+
   if (hasLocale) return NextResponse.next();
 
   const cookieLocale = req.cookies.get("NEXT_LOCALE")?.value;
+
   const locale =
     cookieLocale && locales.includes(cookieLocale)
       ? cookieLocale
       : defaultLocale;
 
   const url = new URL(`/${locale}${pathname === "/" ? "" : pathname}`, req.url);
+
   return NextResponse.redirect(url);
 }
 
@@ -59,11 +58,10 @@ export const config = {
   matcher: ["/((?!api|_next/static|_next/image|favicon.ico).*)"],
 };
 
-// Сделать Skeletons
 // Сохранение имени для отзыва в Product/routing/Reviews
 // Сделать отдельный rating для формы review
 // Написать server actions для формы Reviews
 // Доделать функцию дял постов так же как для продуктов
 // доделать кнопки запомнить и забыл пароль на логин странице
 // доделать добавление в wishlist, корзину
-// Привести в порядок свой GitHub
+// Поиск на главной

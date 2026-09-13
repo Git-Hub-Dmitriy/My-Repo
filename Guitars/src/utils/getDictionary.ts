@@ -1,9 +1,5 @@
 import { cacheLife } from "next/cache";
-
-const dictionaries = {
-  en: () => import("@data/en").then((module) => module.en),
-  de: () => import("@data/de").then((module) => module.de),
-};
+import { dictionaries } from "@data/dataLanguages";
 
 type Locale = keyof typeof dictionaries;
 

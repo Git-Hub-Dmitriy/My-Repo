@@ -15,15 +15,9 @@ const adapter = new PrismaPg(pool);
 const prisma = new PrismaClient({ adapter });
 
 async function main() {
-  console.log("⚠️  Очистка базы данных");
-  await prisma.categoryToProduct.deleteMany({});
-  await prisma.product.deleteMany({});
-  await prisma.post.deleteMany({});
-  await prisma.category.deleteMany({});
-
   console.log("🚀 Запуск сид-скрипта...");
 
-  const adminEmail = "gameheymdall@gmail.com";
+  const adminEmail = process.env.ADMIN_INITIAL_EMAIL;
   const adminPassword = process.env.ADMIN_INITIAL_PASSWORD;
   const adminName = "Main Admin";
 

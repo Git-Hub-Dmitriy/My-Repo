@@ -17,11 +17,11 @@ export default function TopBar(props: PropsTopBar) {
         <h2 className={styles.topBar__text}>{props.dictionary.topBar.tel}</h2>
       </div>
       <div className={styles.topBar__column_right}>
-        <Link href={"auth"} className={styles.topBar__text}>
+        <Link href={"/auth"} className={styles.topBar__text}>
           {props.dictionary.topBar.textAccount}
         </Link>
         <div className={styles.topBar__separator}></div>
-        <Link href={"contact"} className={styles.topBar__text}>
+        <Link href={"/contact"} className={styles.topBar__text}>
           {props.dictionary.topBar.textContact}
         </Link>
       </div>

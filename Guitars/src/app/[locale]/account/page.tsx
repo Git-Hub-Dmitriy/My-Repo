@@ -2,8 +2,6 @@ import { Dictionary } from "@interfaces/dictionary.types";
 import { getDictionary } from "@utils/getDictionary";
 import Account from "@views/Account/Account";
 import { Metadata } from "next";
-import { Suspense } from "react";
-import SkeletonAccount from "@views/Account/SkeletonAccount/SkeletonAccount";
 
 export const metadata: Metadata = {
   title: "Account",
@@ -19,13 +17,10 @@ export default async function account({
 }) {
   const { locale } = await params;
   const dict: Dictionary = await getDictionary(locale);
-  const dynamicSlot = (
-    <Suspense fallback={<SkeletonAccount />}>{cabinet}</Suspense>
-  );
 
   return (
     <>
-      <Account dict={dict} slots={dynamicSlot} />
+      <Account dict={dict} slots={cabinet} />
     </>
   );
 }

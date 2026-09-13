@@ -1,0 +1,105 @@
+@layer components {
+  .aboutTeam {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+    .aboutTeam__title {
+      color: var(--primary-hover-color);
+      font-size: 1em;
+      font-weight: 400;
+      line-height: 22px;
+      margin-bottom: 5px;
+    }
+    .aboutTeam__wrapper {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-auto-rows: auto;
+      justify-items: center;
+      align-items: center;
+      .aboutTeam__box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        align-items: center;
+        background-color: var(--background-color);
+        .aboutTeam__image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .aboutTeam__info {
+          position: relative;
+          width: 87%;
+          top: -30px;
+          display: flex;
+          flex-direction: column;
+          row-gap: 15px;
+          padding: 20px;
+          justify-items: center;
+          align-items: center;
+          background-color: var(--primary-hover-color);
+          .aboutTeam__name {
+            color: var(--primary-color);
+            font-weight: 400;
+            line-height: 20px;
+            font-size: 1em;
+            text-align: center;
+          }
+          .aboutTeam__position {
+            color: var(--secondary-light-color);
+            font-size: 0.875em;
+            line-height: 20px;
+            font-weight: 300;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  @container (min-width: 550px) {
+    .aboutTeam .aboutTeam__wrapper {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      column-gap: 10px;
+      .aboutTeam__box {
+        height: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        .aboutTeam__info {
+          min-height: 115px;
+        }
+      }
+    }
+  }
+  @container (min-width: 768px) {
+    .aboutTeam {
+      row-gap: clamp(10px, 0.97cqw, 25px);
+      .aboutTeam__wrapper {
+        column-gap: 30px;
+      }
+    }
+  }
+  @container (min-width: 900px) {
+    .aboutTeam .aboutTeam__wrapper {
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 0;
+      column-gap: clamp(10px, 1.95cqw, 50px);
+      .aboutTeam__box .aboutTeam__info {
+        top: -25%;
+        display: grid;
+        min-height: 125px;
+        align-content: center;
+        padding: clamp(10px, 1.95cqw, 50px);
+        row-gap: clamp(5px, 1.171cqw, 30px);
+      }
+    }
+  }
+}

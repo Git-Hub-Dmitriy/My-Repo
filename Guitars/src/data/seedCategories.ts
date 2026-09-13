@@ -1,14 +1,38 @@
 export const categories = [
-  { main: "Accessories", subs: [] },
-  { main: "Acoustic", subs: ["Fretboard", "Jatoba", "Rosewood", "Walnut"] },
-
-  { main: "String", subs: ["12", "8", "6"] },
   {
-    main: "Wood",
-    subs: ["Hard Maple", "Mahogany", "Nato"],
+    main: "Accessories",
+    subs: [],
   },
-  { main: "Bass", subs: [] },
-  { main: "Electric", subs: ["Konicy", "Lyrica", "Zoniry"] },
-  { main: "Ukuleles", subs: [] },
-  { main: "Uncategorized", subs: [] },
+  {
+    main: "Acoustic",
+    subs: [
+      "6 String",
+      "Acoustic-Electric",
+      "Spruce",
+      "Mahogany",
+      "Rosewood Fretboard",
+      "Maple Fretboard",
+    ],
+  },
+  {
+    main: "Electric",
+    subs: [
+      "6 String",
+      "7 String",
+      "Mahogany",
+      "Maple",
+      "Rosewood Fretboard",
+      "Maple Fretboard",
+    ],
+  },
+  {
+    main: "Bass",
+    subs: [
+      "4 String",
+      "5 String",
+      "Maple",
+      "Jatoba Fretboard",
+      "Maple Fretboard",
+    ],
+  },
 ];

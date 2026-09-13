@@ -2,4 +2,14 @@
   .contact {
     width: 100%;
   }
+  @container (min-width: 2000px) {
+    .contact {
+      font-size: 1.2rem;
+    }
+  }
+  @container (min-width: 2300px) {
+    .contact {
+      font-size: 1.6rem;
+    }
+  }
 }

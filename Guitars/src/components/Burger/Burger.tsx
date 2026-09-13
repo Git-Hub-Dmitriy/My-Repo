@@ -37,7 +37,11 @@ export default function Burger(props: PropsBurger) {
         </div>
         <nav className={styles.burger__innerList}>
           {props.dict.links.map((item, index) => (
-            <Link className={styles.burger__link} href={item.link} key={index}>
+            <Link
+              className={styles.burger__link}
+              href={`/${item.link}`}
+              key={index}
+            >
               {item.title}
             </Link>
           ))}
@@ -45,7 +49,11 @@ export default function Burger(props: PropsBurger) {
       </div>
       <nav className={styles.navigate}>
         {props.dict.links.map((link, index) => (
-          <Link key={index} className={styles.navigate__link} href={link.link}>
+          <Link
+            key={index}
+            className={styles.navigate__link}
+            href={`/${link.link}`}
+          >
             {link.title}
           </Link>
         ))}

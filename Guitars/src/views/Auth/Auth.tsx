@@ -1,10 +1,8 @@
 import styles from "./Auth.module.css";
 import { Dictionary } from "@interfaces/dictionary.types";
 import Navigation from "@components/Navigation/Navigation";
-import dynamic from "next/dynamic";
-const FormLogin = dynamic(() => import("./FormLogin/FormLogin"));
-const FormRegister = dynamic(() => import("./FormRegister/FormRegister"));
-
+import FormLogin from "./FormLogin/FormLogin";
+import FormRegister from "./FormRegister/FormRegister";
 interface PropsAuth {
   dict: Dictionary;
 }

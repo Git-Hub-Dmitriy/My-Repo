@@ -5,15 +5,15 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import classNames from "classnames";
 interface PropsOurProducts {
-  dict: PageDict<"home">["ourProduct"];
+  translate: PageDict<"home">["ourProduct"];
   product: React.ReactNode;
   locale: string;
 }
 
 export default function OurProducts(props: PropsOurProducts) {
   const pathname = usePathname();
-  const routes = props.dict.routes;
-  const title = props.dict.title;
+  const routes = props.translate.routes;
+  const title = props.translate.title;
 
   return (
     <section className={styles.ourProducts}>
@@ -24,14 +24,13 @@ export default function OurProducts(props: PropsOurProducts) {
             item.href === "Featured"
               ? pathname === `/${props.locale}`
               : pathname.endsWith(item.href.toLowerCase());
-
+          const href =
+            item.href === "Featured"
+              ? `/${props.locale}`
+              : `/${props.locale}/${item.href.toLowerCase()}`;
           return (
             <Link
-              href={
-                item.href === "Featured"
-                  ? `/${props.locale}`
-                  : item.href.toLowerCase()
-              }
+              href={href}
               key={i}
               className={classNames(
                 styles.ourProducts__route,

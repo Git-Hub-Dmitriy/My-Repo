@@ -14,7 +14,7 @@ type FlattenedPost = Post & TranslationData;
 
 interface PropsLatestNews {
   blogs: FlattenedPost[];
-  dict: PageDict<"home">["latestNews"];
+  translate: PageDict<"home">["latestNews"];
 }
 
 export default function LatestNews(props: PropsLatestNews) {
@@ -33,12 +33,12 @@ export default function LatestNews(props: PropsLatestNews) {
 
   return (
     <section className={styles.latestNews}>
-      <h1 className={styles.latestNews__title}>{props.dict.title}</h1>
+      <h1 className={styles.latestNews__title}>{props.translate.title}</h1>
       <div className={styles.latestNews__viewport} ref={emblaRef}>
         <div className={styles.latestNews__container}>
           {props.blogs.map((slide, index) => (
             <Link
-              href={`blog/${slide.id}`}
+              href={`blogs/${slide.id}`}
               className={styles.latestNews__slide}
               key={slide.id}
             >
@@ -47,8 +47,8 @@ export default function LatestNews(props: PropsLatestNews) {
                 src={slide.imageUrl}
                 alt={"Slide image"}
                 priority={index === 0}
-                width={400}
-                height={300}
+                width={1920}
+                height={1080}
               />
               <div className={styles.latestNews__wrapPost}>
                 <h2 className={styles.latestNews__date}>

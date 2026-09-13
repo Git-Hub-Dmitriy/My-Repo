@@ -2,4 +2,14 @@
   .cart {
     width: 100%;
   }
+  @container (min-width: 2000px) {
+    .cart {
+      font-size: 1.2rem;
+    }
+  }
+  @container (min-width: 2300px) {
+    .cart {
+      font-size: 1.6rem;
+    }
+  }
 }

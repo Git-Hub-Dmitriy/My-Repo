@@ -97,6 +97,10 @@
       font-weight: 300;
       color: var(--primary-hover-color);
       font-size: 1em;
+      transition: color 0.4s ease;
+      &:hover {
+        color: var(--secondary-color);
+      }
     }
   }
   @container (min-width: 768px) {

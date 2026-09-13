@@ -2,4 +2,14 @@
   .auth {
     width: 100%;
   }
+  @container (min-width: 2000px) {
+    .auth {
+      font-size: 1.2rem;
+    }
+  }
+  @container (min-width: 2300px) {
+    .auth {
+      font-size: 1.6rem;
+    }
+  }
 }

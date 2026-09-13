@@ -4,5 +4,5 @@ interface PropsPost {
 }
 
 export default function Post(props: PropsPost) {
-  return <main className={styles.post}>df</main>;
+  return <main className={styles.post}></main>;
 }

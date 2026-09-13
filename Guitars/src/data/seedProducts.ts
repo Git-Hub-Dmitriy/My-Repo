@@ -14,827 +14,756 @@ type SeedProduct = Omit<
 export const seedProducts: SeedProduct[] = [
   {
     sku: "MWOOP12",
-    price: 350.0,
+    price: 699,
     oldPrice: 0,
-    image: "/images/products/MWOOP12.webp",
-    size: ["L", "S"],
+    image: "/images/products/EpiphoneLesPaul.webp",
     groups: ["Featured"],
     categoryNames: [
-      "8",
-      "Accessories",
-      "Acoustic",
-      "Bass",
       "Electric",
-      "Fretboard",
-      "Jatoba",
-      "Lyrica",
+      "6 String",
       "Mahogany",
-      "Rosewood",
-      "String",
-      "Ukuleles",
-      "Wood",
+      "Maple",
+      "Rosewood Fretboard",
     ],
     translations: [
       {
         locale: "en",
-        name: "Strap Guitar",
+        name: "Epiphone Les Paul Standard 50s Goldtop",
         title:
-          "Heavy-duty adjustable guitar strap crafted from premium woven materials for maximum shoulder comfort during long gigs.",
-        subtitle: "Ergonomic leather ends with reinforced stitching.",
-        subtitleTwo: "Compatible with electric, acoustic, and bass guitars",
-        description:
-          "Designed for active performers who spend hours on stage, this premium guitar strap evenly distributes instrument weight across your shoulder to prevent strain and fatigue. Crafted from high-tensile woven nylon and finished with genuine leather button ends, it guarantees secure attachment even during energetic stage movements. The fully adjustable sliding mechanism allows players of any stature to dial in their ideal playing height quickly. Reinforced dual-layer stitching around the strap lock holes prevents tearing, ensuring your valuable instrument stays safe night after night.",
+          "Classic single-cut electric guitar with a mahogany body, maple top, and warm dual-humbucker tone.",
+        subtitle:
+          "Traditional Les Paul-inspired construction with a comfortable vintage-style feel.",
+        subtitleTwo:
+          "Designed for blues, rock, classic rock, and powerful lead tones",
+        description: `The Epiphone Les Paul Standard 50s Goldtop combines a classic single-cutaway design with a warm and powerful electric guitar voice. Its mahogany body and maple top provide a balanced foundation with strong sustain and rich harmonic response.
+
+Dual humbucking pickups deliver smooth clean tones and thick overdrive, making this guitar equally comfortable for blues, classic rock, hard rock, and expressive lead playing. The rosewood fingerboard provides a familiar feel for both rhythm work and bends.`,
         descriptionTwo:
-          "Available in classic patterns that complement any guitar finish, this strap combines durability, comfort, and effortless style. Whether you are gigging in clubs, rehearsing in the studio, or practicing at home, it delivers reliable performance you can trust.",
-        tags: ["String", "Wood"],
-        color: ["Yellow", "Blue"],
-      },
-      {
-        locale: "de",
-        name: "Strap Gitarre",
-        title:
-          "Robuster, verstellbarer Gitarrengurt aus hochwertigen Webmaterialien für maximalen Tragekomfort an den Schultern auch bei langen Auftritten.",
-        subtitle: "Ergonomische Lederenden mit verstärkten Nähten.",
-        subtitleTwo:
-          "Kompatibel mit E-Gitarren, Akustikgitarren und Bassgitarren.",
-        description:
-          "Dieser Premium-Gitarrengurt wurde speziell für aktive Musiker entwickelt, die stundenlang auf der Bühne stehen. Er verteilt das Gewicht des Instruments gleichmäßig auf die Schulter und beugt so Belastung und Ermüdung vor. Gefertigt aus hochfestem, gewebtem Nylon und mit Knöpfen aus echtem Leder versehen, garantiert er sicheren Halt, selbst bei energiegeladenen Bühnenbewegungen. Dank des stufenlos verstellbaren Schiebemechanismus findet jeder Spieler, unabhängig von seiner Größe, schnell die optimale Spielhöhe. Verstärkte Doppelnähte an den Gurtverschlusslöchern verhindern ein Einreißen und sorgen dafür, dass Ihr wertvolles Instrument Abend für Abend bestens geschützt ist.",
-        descriptionTwo:
-          "Dieser Gitarrengurt ist in klassischen Designs erhältlich, die zu jeder Gitarrenlackierung passen, und vereint Langlebigkeit, Komfort und mühelosen Stil. Ob bei Clubauftritten, Studioproben oder beim Üben zu Hause – er bietet zuverlässige Leistung, auf die Sie sich verlassen können.",
-        tags: ["Zeichenkette", "Holz"],
-        color: ["Gelb", "Blau"],
-      },
-    ],
-  },
-  {
-    sku: "MWOOP11",
-    price: 190.0,
-    oldPrice: 0,
-    image: "/images/products/MWOOP11.webp",
-    size: ["L", "S"],
-    categoryNames: [
-      "Accessories",
-      "Acoustic",
-      "Bass",
-      "Electric",
-      "Jatoba",
-      "Konicy",
-      "String",
-      "Ukuleles",
-    ],
-    groups: ["Featured"],
-    translations: [
-      {
-        locale: "en",
-        name: "Spruce Guitar",
-        title:
-          "Acoustic guitar with a solid Sitka spruce top delivering articulate projection and crisp high-end response.",
-        subtitle: "Resonant tonewood pairing with smooth playing neck profile.",
-        subtitleTwo: "Ideal choice for fingerstyle players and songwriters",
-        description: `The Spruce Guitar combines traditional craftsmanship with modern playability to deliver a clear, ringing acoustic tone. The solid Sitka spruce soundboard provides a dynamic sound range that opens up and matures the more you play, making it a reliable companion for both recording sessions and unplugged jams.
-
-Featuring scalloped X-bracing under the hood, this guitar produces enhanced low-end resonance while keeping mid-range frequencies balanced and punchy. The satin-finished neck slides smoothly under your thumb, reducing palm friction during chord changes.`,
-        descriptionTwo: `Equipped with die-cast tuning machines for rock-solid pitch stability, this model delivers unbeatable value for players seeking authentic acoustic resonance without breaking the bank.`,
-        tags: [],
-        color: ["Black", "Yellow", "Blue", "Brown", "Green", "Red"],
-      },
-      {
-        locale: "de",
-        name: "Spruce Gitarre",
-        title:
-          "Akustikgitarre mit massiver Sitka-Fichtendecke, die für eine artikulierte Projektion und eine klare Höhenwiedergabe sorgt.",
-        subtitle:
-          "Resonanzstarkes Tonholz trifft auf ein geschmeidiges Halsprofil.",
-        subtitleTwo:
-          "Die ideale Wahl für Fingerstyle-Gitarristen und Songwriter",
-        description:
-          "Die Spruce Guitar vereint traditionelle Handwerkskunst mit moderner Spielbarkeit und liefert einen klaren, vollen Akustikklang. Die massive Sitka-Fichtendecke bietet ein dynamisches Klangspektrum, das sich mit zunehmender Spieldauer erweitert und weiterentwickelt. Dadurch ist sie ein zuverlässiger Begleiter für Studioaufnahmen und spontane Jamsessions. Dank der scalloped X-Bracing-Konstruktion erzeugt diese Gitarre eine verstärkte Bassresonanz bei gleichzeitig ausgewogenen und druckvollen Mitten. Der seidenmatt lackierte Hals gleitet sanft unter dem Daumen und reduziert die Reibung der Handfläche beim Akkordwechsel.",
-        descriptionTwo:
-          "Ausgestattet mit gegossenen Stimmmechaniken für absolute Stimmstabilität bietet dieses Modell ein unschlagbares Preis-Leistungs-Verhältnis für Spieler, die authentische akustische Resonanz suchen, ohne dabei ihr Budget zu sprengen.",
-        tags: [],
-        color: ["Schwarz", "Gelb", "Blau", "Braun", "Grün", "Rot"],
-      },
-    ],
-  },
-  {
-    sku: "MWOOP10",
-    price: 300.0,
-    oldPrice: 0,
-    image: "/images/products/MWOOP10.webp",
-    size: ["L", "S", "M", "XL", "XS", "XXL"],
-    categoryNames: [
-      "8",
-      "Accessories",
-      "Acoustic",
-      "Bass",
-      "Electric",
-      "Fretboard",
-      "Lyrica",
-      "Nato",
-      "Rosewood",
-      "String",
-      "Ukuleles",
-      "Wood",
-    ],
-    groups: ["Featured"],
-    translations: [
-      {
-        locale: "en",
-        name: "Seagull Guitar",
-        title:
-          "Handcrafted acoustic guitar offering warm midrange depth, smooth neck action, and beautiful satin tonewood finish.",
-        subtitle: "Precision neck alignment for effortless chord fingerings.",
-        subtitleTwo: "Sustainably sourced woods and durable construction",
-        description: `Renowned for its warm, rich tonal footprint, the Seagull Guitar offers musicians an inspiring acoustic experience. Constructed with a cedar soundboard and high-density back and sides, it produces a sweet, woody tone that excels in fingerpicking and light strumming applications.
-
-The tapered headstock aligns string pull straight through the nut, minimizing friction and keeping tuning locked in even during aggressive performances. The comfortable slim neck profile feels familiar in hand, making complex barre chords feel natural and fluid.`,
-        descriptionTwo: `Finished with an ultra-thin custom polished coat, the wood vibrates freely for increased sustain and projection while remaining protected against everyday wear and tear.`,
-        tags: [],
-        color: ["Black", "Yellow"],
-      },
-      {
-        locale: "de",
-        name: "Seagull Gitarre",
-        title:
-          "Handgefertigte Akustikgitarre mit warmem, tiefem Mitteltonbereich, leichtgängiger Halsbespielbarkeit und wunderschönem seidenmattem Tonholzfinish.",
-        subtitle: "Präzise Halsausrichtung für müheloses Greifen von Akkorden.",
-        subtitleTwo: "Nachhaltig gewonnene Hölzer und langlebige Konstruktion",
-        description: `Die Seagull-Gitarre ist bekannt für ihren warmen, vollen Klang und bietet Musikern ein inspirierendes Akustikerlebnis. Gefertigt aus einer Zedernholzdecke und hochdichtem Boden und Zargen, erzeugt sie einen süßen, holzigen Ton, der sich hervorragend für Fingerpicking und leichtes Strumming eignet.
-Die konische Kopfplatte sorgt für einen geraden Saitenverlauf durch den Sattel, minimiert die Reibung und hält die Stimmung auch bei kraftvollem Spiel stabil. Das komfortable, schlanke Halsprofil liegt vertraut in der Hand und ermöglicht ein natürliches und flüssiges Spiel komplexer Barré-Akkorde.`,
-        descriptionTwo:
-          "Mit einer ultradünnen, speziell polierten Schicht versehen, schwingt das Holz frei und sorgt so für mehr Sustain und Projektion, während es gleichzeitig vor alltäglicher Abnutzung geschützt bleibt.",
-        tags: [],
-        color: ["Schwarz", "Gelb"],
-      },
-    ],
-  },
-  {
-    sku: "MWOOP9",
-    price: 400.0,
-    oldPrice: 0,
-    image: "/images/products/MWOOP9.webp",
-    size: ["L", "S", "M"],
-    categoryNames: [
-      "Accessories",
-      "Acoustic",
-      "Bass",
-      "Electric",
-      "Fretboard",
-      "String",
-      "Ukuleles",
-      "Wood",
-    ],
-    groups: ["Featured"],
-    translations: [
-      {
-        locale: "en",
-        name: "Ovation Guitar",
-        title:
-          "Acoustic-electric guitar featuring a composite roundback body for superior feedback suppression and stage projection.",
-        subtitle: "Built-in preamp with multi-band EQ and integrated tuner.",
-        subtitleTwo:
-          "Designed for seamless stage amplification and live performances",
-        description: `Engineered specifically for live performance, the Ovation Guitar breaks away from conventional flat-back acoustics with its ergonomic composite body bowl. This unique design increases acoustic projection while drastically reducing low-frequency feedback when plugged into loud stage monitors or PA systems.
-
-The onboard active pickup system captures the guitar's natural acoustic brilliance, offering intuitive volume, bass, and treble adjustments directly from the upper bout controller. The smooth Venetian cutaway provides unhindered access to high fret positions.`,
-        descriptionTwo: `Its fast, electric-style neck profile makes transitioning from electric to acoustic playing effortless, making this guitar a favorite among gigging guitarists who need reliability and punch in live environments.`,
-        tags: ["Bass", "Nato", "String"],
-        color: ["Black", "Blue"],
-      },
-      {
-        locale: "de",
-        name: "Ovation Gitarre",
-        title:
-          "Akustisch-elektrische Gitarre mit einem Korpus aus Verbundmaterial mit runder Rückseite für überlegene Rückkopplungsunterdrückung und Bühnenprojektion.",
-        subtitle:
-          "Eingebauter Vorverstärker mit Mehrband-Equalizer und integriertem Stimmgerät.",
-        subtitleTwo:
-          "Entwickelt für nahtlose Bühnenverstärkung und Live-Auftritte",
-        description: `Die Ovation Guitar wurde speziell für Live-Auftritte entwickelt und bricht mit herkömmlichen Akustikgitarren mit flacher Rückseite durch ihren ergonomisch geformten Korpus aus Verbundmaterial. Dieses einzigartige Design verbessert die akustische Projektion und reduziert gleichzeitig Rückkopplungen im Tieftonbereich beim Anschluss an laute Bühnenmonitore oder PA-Anlagen drastisch. Das integrierte aktive Tonabnehmersystem fängt die natürliche akustische Brillanz der Gitarre ein und ermöglicht die intuitive Einstellung von Lautstärke, Bass und Höhen direkt über den Regler am oberen Korpus. Der sanfte venezianische Cutaway sorgt für uneingeschränkten Zugang zu den hohen Bünden.`,
-        descriptionTwo:
-          "Dank des schnellen, E-Gitarren-ähnlichen Halsprofils gelingt der Übergang vom elektrischen zum akustischen Spiel mühelos, was diese Gitarre zu einem Favoriten unter den Gitarristen macht, die auf der Bühne Zuverlässigkeit und Durchsetzungsfähigkeit benötigen.",
-        tags: ["Bass", "Nato", "String"],
-        color: ["Schwarz", "Blau"],
-      },
-    ],
-  },
-  {
-    sku: "MWOOP8",
-    price: 250.0,
-    oldPrice: 0,
-    image: "/images/products/MWOOP8.webp",
-    size: ["L", "S", "M"],
-    categoryNames: [
-      "Accessories",
-      "Acoustic",
-      "Bass",
-      "Electric",
-      "Konicy",
-      "String",
-      "Rosewood",
-    ],
-    groups: ["Featured", "Special"],
-    translations: [
-      {
-        locale: "en",
-        name: "Martin Guitar",
-        title:
-          "Classic dreadnought acoustic guitar engineered with deep bass response, booming volume, and timeless vintage appeal.",
-        subtitle:
-          "Dreadnought body shape providing massive volume and full-bodied tone.",
-        subtitleTwo:
-          "Hand-fitted dovetail neck joint for maximum acoustic transfer",
-        description: `The Martin Guitar represents the quintessential dreadnought experience—powerful, resonant, and balanced across the entire frequency spectrum. Its full-size body cavity produces a deep, punchy low-end response that cuts through any acoustic ensemble with ease.
-
-Built with a hand-fitted dovetail neck joint, string resonance transfers directly into the body wood for unmatched sustain and harmonic richness. The hand-rubbed neck finish offers a sleek, comfortable playing surface for fast single-note runs and solid rhythm work.`,
-        descriptionTwo: `A staple for bluegrass, folk, and rock guitarists, this instrument offers legendary dreadnought projection that shines both around a campfire and in front of studio microphones.`,
-        tags: ["Nato"],
-        color: ["Black"],
-      },
-      {
-        locale: "de",
-        name: "Martin Gitarre",
-        title:
-          "Klassische Dreadnought-Akustikgitarre mit tiefem Bass, sattem Klang und zeitlosem Vintage-Charme.",
-        subtitle:
-          "Die Dreadnought-Korpusform sorgt für ein massives Volumen und einen vollen, kräftigen Klang.",
-        subtitleTwo:
-          "Handgefertigte Schwalbenschwanz-Halsverbindung für maximale akustische Übertragung",
-        description: `Die Martin-Gitarre verkörpert das ultimative Dreadnought-Erlebnis – kraftvoll, resonant und ausgewogen über das gesamte Frequenzspektrum. Ihr Korpus in voller Größe erzeugt einen tiefen, druckvollen Bass, der sich mühelos in jedem akustischen Ensemble durchsetzt. Dank der handgefertigten Schwalbenschwanzverbindung am Hals wird die Saitenresonanz direkt auf das Holz übertragen, was für unvergleichliches Sustain und harmonische Fülle sorgt. Die handpolierte Halsoberfläche bietet eine geschmeidige, komfortable Spielfläche für schnelle Soli und solides Rhythmusspiel.`,
-        descriptionTwo: `Dieses Instrument ist ein Muss für Bluegrass-, Folk- und Rockgitarristen und bietet die legendäre Dreadnought-Klangprojektion, die sowohl am Lagerfeuer als auch vor Studiomikrofonen glänzt.`,
-        tags: ["Nato"],
-        color: ["Schwarz"],
-      },
-    ],
-  },
-  {
-    sku: "MWOOP6",
-    price: 100.0,
-    oldPrice: 0,
-    image: "/images/products/MWOOP6.webp",
-    size: ["L", "S", "M", "XL", "XS", "XXL"],
-    categoryNames: [
-      "8",
-      "Bass",
-      "Electric",
-      "Hard Maple",
-      "String",
-      "Ukuleles",
-      "Wood",
-      "Zoniry",
-    ],
-    groups: ["Featured"],
-    translations: [
-      {
-        locale: "en",
-        name: "Linden Guitar",
-        title:
-          "Lightweight entry-level acoustic guitar crafted with a linden wood body for smooth response and easy playability.",
-        subtitle:
-          "Comfortable body contours and low string action for beginners.",
-        subtitleTwo:
-          "Budget-friendly option without sacrificing structural durability",
-        description: `The Linden Guitar is the ideal entry point for aspiring guitarists taking their first steps in music. Constructed with a linden wood body, it offers a balanced, warm tone with smooth mid-range emphasis that makes practicing engaging and enjoyable.
-
-Factory-set with comfortable low action, students can fret notes easily without experiencing hand fatigue. The lightweight body construction makes it easy to hold during long practice sessions, whether sitting down or standing with a strap.`,
-        descriptionTwo: `Durable nickel frets and reliable tuning machines ensure stable tuning and long-lasting playability, making this model an exceptional value for students and hobbyists alike.`,
-        tags: ["Nato", "Wood"],
-        color: ["Black", "Blue", "Brown", "Green", "Red", "Yellow"],
-      },
-      {
-        locale: "de",
-        name: "Linden Gitarre",
-        title:
-          "Leichte Einsteiger-Akustikgitarre mit einem Korpus aus Lindenholz für ein geschmeidiges Spielgefühl und einfache Bespielbarkeit.",
-        subtitle:
-          "Komfortable Körperkonturen und niedrige Saitenlage für Anfänger.",
-        subtitleTwo:
-          "Preisgünstige Option ohne Einbußen bei der strukturellen Haltbarkeit.",
-        description: `Die Lindengitarre ist der ideale Einstieg für angehende Gitarristen, die ihre ersten Schritte in der Musik wagen. Ihr Korpus aus Lindenholz bietet einen ausgewogenen, warmen Klang mit sanfter Mittenbetonung, der das Üben abwechslungsreich und angenehm macht. Dank der werkseitig eingestellten, komfortablen Saitenlage können Schüler die Töne mühelos greifen, ohne dass die Hände ermüden. Durch ihr geringes Gewicht liegt sie auch bei längeren Übungseinheiten, ob im Sitzen oder Stehen mit Gurt, gut in der Hand.`,
-        descriptionTwo: `Die robusten Nickelbünde und die zuverlässigen Stimmmechaniken gewährleisten eine stabile Stimmung und langanhaltende Spielbarkeit, wodurch dieses Modell sowohl für Schüler als auch für Hobbyisten ein außergewöhnliches Preis-Leistungs-Verhältnis bietet.`,
-        tags: ["Nato", "Holz"],
-        color: ["Schwarz", "Blau", "Braun", "Grün", "Rot", "Gelb"],
-      },
-    ],
-  },
-  {
-    sku: "MWOOP5",
-    price: 190.0,
-    oldPrice: 0,
-    image: "/images/products/MWOOP5.webp",
-    size: ["S", "M"],
-    categoryNames: [
-      "Accessories",
-      "Acoustic",
-      "Bass",
-      "Electric",
-      "Jatoba",
-      "Lyrica",
-    ],
-    groups: ["Featured"],
-    translations: [
-      {
-        locale: "en",
-        name: "Kadence Guitar",
-        title:
-          "Modern acoustic-electric guitar featuring a built-in pickup, cutaway body, and sleek glossy finish.",
-        subtitle: "Integrated EQ preamp system for quick amplification.",
-        subtitleTwo: "Ergonomic cutaway body design for high-fret soloing",
-        description: `Combining sleek modern styling with practical gigging features, the Kadence Guitar is built for contemporary players. Its soft cutaway body grants full access to the upper frets, opening up new possibilities for acoustic lead lines and higher chord voicings.
-
-The onboard piezoelectric pickup and preamp circuit allow you to plug directly into an amplifier or audio interface, giving you full control over your amplified bass, mid, and treble frequencies.`,
-        descriptionTwo: `The smooth glossy body finish protects the instrument from moisture while adding a refined visual shimmer under stage lighting.`,
-        tags: [],
-        color: [],
-      },
-      {
-        locale: "de",
-        name: "Kadence Gitarre",
-        title:
-          "Moderne elektroakustische Gitarre mit eingebautem Tonabnehmer, Cutaway-Korpus und elegantem Hochglanzfinish.",
-        subtitle:
-          "Integriertes EQ-Vorverstärkersystem für schnelle Verstärkung.",
-        subtitleTwo:
-          "Ergonomisches Cutaway-Korpusdesign für Soli in den hohen Bünden",
-        description: `Die Kadence-Gitarre vereint elegantes, modernes Design mit praktischen Bühnenfunktionen und ist wie geschaffen für zeitgenössische Gitarristen. Ihr weicher Cutaway ermöglicht vollen Zugriff auf die oberen Bünde und eröffnet so neue Möglichkeiten für akustische Lead-Linien und höhere Akkordlagen. Dank des integrierten Piezo-Tonabnehmers und der Vorverstärkerschaltung können Sie die Gitarre direkt an einen Verstärker oder ein Audio-Interface anschließen und haben so die volle Kontrolle über die verstärkten Bass-, Mitten- und Höhenfrequenzen.`,
-        descriptionTwo: `Die glatte, glänzende Lackierung des Korpus schützt das Instrument vor Feuchtigkeit und verleiht ihm unter Bühnenbeleuchtung einen edlen optischen Schimmer.`,
-        tags: [],
-        color: [],
-      },
-    ],
-  },
-  {
-    sku: "MWOOP4",
-    price: 260.0,
-    oldPrice: 0,
-    image: "/images/products/MWOOP4.webp",
-    size: ["S", "M"],
-    categoryNames: [
-      "8",
-      "Fretboard",
-      "Nato",
-      "Rosewood",
-      "Acoustic",
-      "Bass",
-      "Electric",
-      "Lyrica",
-      "String",
-      "Ukuleles",
-      "Wood",
-    ],
-    groups: ["Featured", "Bestseller"],
-    translations: [
-      {
-        locale: "en",
-        name: "Jixing Guitar",
-        title:
-          "Versatile folk acoustic guitar delivering bright attack, rich overtone resonance, and comfortable neck profile.",
-        subtitle: "Folk body shape optimized for comfortable lap positioning.",
-        subtitleTwo:
-          "Precision fretwork ensuring buzz-free playing across the fretboard",
-        description: `The Jixing Guitar offers a focused, articulate voice housed in a comfortable folk-style body shape. Slightly smaller than a traditional dreadnought, it sits comfortably on the lap, making it a favorite for intimate acoustic sets and cozy home practice sessions.
-
-Its spruce-laminate soundboard delivers a snappy, bright attack with excellent clarity for strumming chords and fingerstyle patterns. The smooth dark hardwood fretboard features precision-dressed frets to ensure smooth slides and buzz-free note delivery.`,
-        descriptionTwo: `Complemented by enclosed chrome tuners and a sturdy rosette rosette accent, this guitar balances visual charm with practical acoustic performance.`,
-        tags: ["Wood"],
-        color: ["Red", "Yellow"],
-      },
-      {
-        locale: "de",
-        name: "Jixing Gitarre",
-        title:
-          "Vielseitige Folk-Akustikgitarre mit brillantem Anschlag, reichhaltiger Obertonresonanz und komfortablem Halsprofil.",
-        subtitle:
-          "Folk-Körperform, optimiert für bequemes Sitzen auf dem Schoß.",
-        subtitleTwo:
-          "Präzise Bundierung gewährleistet ein schnarrfreies Spielgefühl über das gesamte Griffbrett.",
-        description: `Die Jixing-Gitarre bietet einen fokussierten, ausdrucksstarken Klang in einer komfortablen Folk-Korpusform. Etwas kleiner als eine traditionelle Dreadnought, liegt sie angenehm auf dem Schoß und ist daher ideal für intime Akustik-Sets und gemütliche Übungssessions zu Hause. Ihre Fichtendecke sorgt für einen knackigen, hellen Anschlag mit exzellenter Klarheit beim Akkordspiel und Fingerstyle. Das glatte, dunkle Hartholz-Griffbrett verfügt über präzisionsabgerichtete Bünde für sanfte Slides und ein schnarrfreies Spiel.`,
-        descriptionTwo: `Ergänzt durch verchromte, geschlossene Mechaniken und eine robuste Rosette, vereint diese Gitarre optischen Charme mit praktischer akustischer Leistung.`,
-        tags: ["Holz"],
-        color: ["Rot", "Gelb"],
-      },
-    ],
-  },
-  {
-    sku: "MWOOP3",
-    price: 120.0,
-    oldPrice: 140.0,
-    image: "/images/products/MWOOP3.webp",
-    size: ["S"],
-    categoryNames: [
-      "6",
-      "Fretboard",
-      "Bass",
-      "Electric",
-      "Mahogany",
-      "Rosewood",
-      "String",
-      "Ukuleles",
-      "Walnut",
-      "Wood",
-      "Zoniry",
-    ],
-    groups: ["Bestseller", "Special"],
-    translations: [
-      {
-        locale: "en",
-        name: "Jackson Guitar",
-        title:
-          "High-octane solidbody electric guitar engineered for lightning-fast shredding, precise technical soloing, and heavy aggressive riffs.",
-        subtitle:
-          "Speed-oriented compound radius fretboard and high-output humbuckers.",
-        subtitleTwo:
-          "Designed for hard rock and heavy metal guitarists seeking effortless playability",
-        description: `Built for speed and performance, the Jackson Guitar is crafted for players who demand razor-sharp precision during high-energy performances. Featuring a sleek double-cutaway mahogany body and a fast bolt-on maple neck, it offers unhindered access all the way up to the 24th fret.
-
-The high-output ceramic humbucking pickups deliver a tight, punchy low end alongside searing highs that cut through heavy drum and bass mixes. The compound-radius fretboard flattens out towards the upper register, allowing extreme string bends without notes fretting out or choking.`,
-        descriptionTwo: `Complete with a vintage-style fulcrum tremolo bridge for subtle pitch bends and aggressive dive bombs, this instrument delivers classic metal aesthetic and uncompromised playability at an unbeatable price point.`,
-        tags: ["Bass", "Nato"],
-        color: ["Brown"],
-      },
-      {
-        locale: "de",
-        name: "Jackson Gitarre",
-        title:
-          "Hochleistungsfähige E-Gitarre mit massivem Korpus, entwickelt für blitzschnelles Shredding, präzise technische Soli und harte, aggressive Riffs.",
-        subtitle:
-          "Geschwindigkeitsoptimiertes Compound-Radius-Griffbrett und Humbucker mit hoher Ausgangsleistung.",
-        subtitleTwo:
-          "Entwickelt für Hardrock- und Heavy-Metal-Gitarristen, die mühelose Spielbarkeit suchen.",
-        description: `Die Jackson Guitar wurde für Geschwindigkeit und Performance entwickelt und ist ideal für Gitarristen, die bei energiegeladenen Auftritten höchste Präzision fordern. Mit ihrem schlanken Mahagoni-Korpus mit Double-Cutaway und dem schnellen, geschraubten Ahornhals bietet sie uneingeschränkten Zugang bis zum 24. Bund. Die leistungsstarken Keramik-Humbucker liefern einen druckvollen, satten Bass und durchsetzungsstarke Höhen, die sich selbst in dichten Drum-and-Bass-Mixen behaupten. Das Compound-Radius-Griffbrett flacht im oberen Register ab und ermöglicht so extreme Bendings ohne Schnarren oder Abwürgen der Saiten.`,
-        descriptionTwo: `Ausgestattet mit einem Tremolo-System im Vintage-Stil für subtile Pitch-Bends und aggressive Dive Bombs, bietet dieses Instrument klassische Metal-Ästhetik und kompromisslose Spielbarkeit zu einem unschlagbaren Preis.`,
-        tags: ["Bass", "Nato"],
-        color: ["Braun"],
-      },
-    ],
-  },
-  {
-    sku: "MWOOP1",
-    price: 500.0,
-    oldPrice: 0,
-    image: "/images/products/MWOOP11.webp",
-    size: ["L", "M", "S", "XL", "XS", "XXL"],
-    categoryNames: ["Bass", "Electric", "Konicy", "Nato", "Ukuleles", "Wood"],
-    groups: ["Bestseller"],
-    translations: [
-      {
-        locale: "en",
-        name: "Ibanez Guitar",
-        title:
-          "Modern high-performance electric guitar featuring an ultra-slim Wizard neck, versatile HSH pickup layout, and precision hardware.",
-        subtitle:
-          "Precision Japanese design heritage tailored for contemporary virtuosos.",
-        subtitleTwo:
-          "Exceptional dynamic clarity across complex chord voicings and fast lead lines",
-        description: `The Ibanez Guitar stands as a hallmark of precision engineering for technical players and modern shredders. Equipped with a thin 5-piece maple/walnut neck, it offers an insanely fast feel that reduces hand fatigue during demanding extended solos and complex arpeggio passages.
-
-Its versatile HSH pickup configuration provides a broad tonal palette—ranging from thick humbucking overdrive to clean, glassy single-coil tones ideal for funk, fusion, and progressive rock. The double-locking tremolo system ensures rock-solid tuning stability even under heavy whammy bar abuse.`,
-        descriptionTwo: `Crafted with a lightweight body and deep cutaways, this model provides pristine ergonomic comfort whether practicing for hours in the studio or performing under hot stage lights.`,
-        tags: ["String"],
-        color: ["White"],
-      },
-      {
-        locale: "de",
-        name: "Ibanez Gitarre",
-        title:
-          "Moderne, leistungsstarke E-Gitarre mit ultradünnem Wizard-Hals, vielseitigem HSH-Tonabnehmer-Layout und präziser Hardware.",
-        subtitle:
-          "Präzise japanische Designtradition, maßgeschneidert für zeitgenössische Virtuosen.",
-        subtitleTwo:
-          "Außergewöhnliche dynamische Klarheit bei komplexen Akkordfolgen und schnellen Melodielinien",
-        description: `Die Ibanez-Gitarre steht für höchste Präzision und ist die ideale Wahl für technisch versierte Gitarristen und moderne Shredder. Ausgestattet mit einem schlanken, fünfteiligen Ahorn-/Walnuss-Hals, bietet sie ein extrem schnelles Spielgefühl und reduziert die Ermüdung der Hand bei anspruchsvollen, ausgedehnten Soli und komplexen Arpeggio-Passagen. Ihre vielseitige HSH-Tonabnehmerkonfiguration deckt ein breites Klangspektrum ab – von sattem Humbucker-Overdrive bis hin zu klaren, glasklaren Single-Coil-Sounds, perfekt für Funk, Fusion und Progressive Rock. Das Double-Locking-Tremolo-System garantiert absolute Stimmstabilität, selbst bei intensivem Einsatz des Tremolohebels.`,
-        descriptionTwo: `Dieses Modell zeichnet sich durch ein leichtes Gehäuse und tiefe Aussparungen aus und bietet so optimalen ergonomischen Komfort, egal ob man stundenlang im Studio übt oder unter grellem Bühnenlicht auftritt.`,
-        tags: ["Zeichenkette"],
-        color: ["Weiß"],
-      },
-    ],
-  },
-  {
-    sku: "MWOOP2",
-    price: 200.0,
-    oldPrice: 250.0,
-    image: "/images/products/MWOOP11.webp",
-    size: ["L", "M", "S", "XL", "XS", "XXL"],
-    categoryNames: ["12", "Acoustic", "Fretboard", "Jatoba", "String"],
-    groups: ["Bestseller"],
-    translations: [
-      {
-        locale: "en",
-        name: "Guitar GM 92",
-        title:
-          "Versatile grand auditorium acoustic guitar with rich mid-range balance, resonant tone, and smooth action.",
-        subtitle:
-          "All-purpose acoustic workhorse suitable for fingerpicking and flatpicking.",
-        subtitleTwo:
-          "Solid top construction providing enhanced sustain and harmonic richness",
-        description: `The GM 92 is an all-around acoustic workhorse built to deliver rich projection across diverse musical genres. Its grand auditorium body style strikes an ideal balance between dreadnought low-end authority and concert-style note definition.
-
-Constructed with high-grade tonewoods and internal X-bracing, it produces a warm, open sound that continues to blossom as the wood ages over time. The smooth fretboard edges and low factory setup ensure comfortable playability for both beginners and experienced gigging musicians.`,
-        descriptionTwo: `Enclosed chrome tuners ensure smooth, accurate tuning, while the elegant body binding and natural satin finish provide a clean, timeless aesthetic on stage or at home.`,
-        tags: ["Wood"],
-        color: ["Yellow", "Black", "Blue", "Brown", "Green", "Red"],
-      },
-      {
-        locale: "de",
-        name: "Gitarre GM 92",
-        title:
-          "Vielseitige Grand Auditorium Akustikgitarre mit ausgewogenem Mitteltonbereich, resonantem Klang und geschmeidiger Bespielbarkeit.",
-        subtitle:
-          "Vielseitiges akustisches Arbeitstier, geeignet für Fingerpicking und Flatpicking.",
-        subtitleTwo:
-          "Die massive Deckenkonstruktion sorgt für verbessertes Sustain und harmonischen Reichtum.",
-        description: `Die GM 92 ist eine vielseitige Akustikgitarre, die für einen satten Klang in unterschiedlichsten Musikrichtungen entwickelt wurde. Ihr Grand-Auditorium-Korpus bietet die ideale Balance zwischen dem kraftvollen Bass einer Dreadnought und der präzisen Tondefinition einer Konzertgitarre. Gefertigt aus hochwertigen Tonhölzern und mit interner X-Verstrebung, erzeugt sie einen warmen, offenen Klang, der mit der Zeit immer weiter an Tiefe gewinnt. Die glatten Griffbrettkanten und die niedrige Werkseinstellung gewährleisten sowohl Anfängern als auch erfahrenen Musikern ein komfortables Spielgefühl.`,
-        descriptionTwo: `Geschlossene Chrom-Mechaniken gewährleisten ein reibungsloses und präzises Stimmen, während die elegante Korpusumrandung und das natürliche Satin-Finish für eine klare und zeitlose Ästhetik auf der Bühne oder zu Hause sorgen.`,
-        tags: ["Holz"],
-        color: ["Gelb", "Schwarz", "Blau", "Braun", "Grün", "Rot"],
-      },
-    ],
-  },
-  {
-    sku: "MWOOP22",
-    price: 180.0,
-    oldPrice: 200.0,
-    image: "/images/products/MWOOP22.webp",
-    size: ["L", "M", "S"],
-    categoryNames: ["Accessories", "Acoustic", "Bass", "Electric", "Ukuleles"],
-    groups: ["Latest", "Special"],
-    translations: [
-      {
-        locale: "en",
-        name: "Fender Guitar",
-        title:
-          "Iconic single-cutaway electric guitar delivering timeless chime, snappy bridge bite, and classic blues/rock tones.",
-        subtitle: "Classic vintage voicing with modern C-shaped neck profile.",
-        subtitleTwo: "Pristine clean tones and articulate crunch performance",
-        description: `Rooted in decades of music history, the Fender Guitar delivers the unmistakable tone and feel that defined rock, country, and blues. The solid body paired with single-coil pickups offers iconic clarity, bell-like high frequency response, and signature snap.
-
-The modern "C"-shaped neck profile with 9.5"-radius fingerboard provides a comfortable, natural feel in the hand whether playing open rhythm chords or bending notes in the upper register. A string-through-body bridge enhances string resonance and sustain.`,
-        descriptionTwo: `Boasting a durable polyurethane gloss finish and vintage-style control knobs, this guitar offers authentic heritage character backed by modern manufacturing quality.`,
-        tags: [],
-        color: ["Brown"],
-      },
-      {
-        locale: "de",
-        name: "Fender Gitarre",
-        title:
-          "Legendäre Single-Cutaway-E-Gitarre mit zeitlosem Klang, knackigem Steg-Sound und klassischen Blues/Rock-Tönen.",
-        subtitle:
-          "Klassischer Vintage-Sound mit modernem C-förmigem Halsprofil.",
-        subtitleTwo:
-          "Makellose, klare Töne und differenzierte Crunch-Performance",
-        description: `Die Fender-Gitarre, deren Wurzeln in jahrzehntelanger Musikgeschichte liegen, liefert den unverwechselbaren Klang und das Spielgefühl, die Rock, Country und Blues geprägt haben. Der massive Korpus in Kombination mit Single-Coil-Tonabnehmern bietet legendäre Klarheit, glockenklare Höhen und den charakteristischen knackigen Sound. Das moderne „C“-förmige Halsprofil mit 9,5"-Radius-Griffbrett sorgt für ein komfortables und natürliches Spielgefühl, egal ob offene Rhythmusakkorde oder Bendings in der hohen Lage. Die Saitenführung durch den Korpus optimiert Resonanz und Sustain.`,
-        descriptionTwo: `Diese Gitarre besticht durch eine strapazierfähige Polyurethan-Hochglanzlackierung und Reglerknöpfe im Vintage-Stil und bietet authentischen Heritage-Charakter in Verbindung mit moderner Fertigungsqualität.`,
-        tags: [],
-        color: ["Braun"],
-      },
-    ],
-  },
-  {
-    sku: "MWOOP17",
-    price: 130.0,
-    oldPrice: 0,
-    image: "/images/products/MWOOP17.webp",
-    size: ["L", "M", "S"],
-    categoryNames: [
-      "12",
-      "6",
-      "Accessories",
-      "Hard Maple",
-      "Jatoba",
-      "Konicy",
-      "Mahogany",
-      "String",
-      "Walnut",
-      "Wood",
-    ],
-    groups: ["Latest"],
-    translations: [
-      {
-        locale: "en",
-        name: "Epiphone Guitar",
-        title:
-          "Classic mahogany archtop electric guitar offering thick humbucking warmth, singing sustain, and vintage charm.",
-        subtitle:
-          "Dual humbucker setup with individual volume and tone controls.",
-        subtitleTwo:
-          "Resonant solid mahogany body for warm, punchy lower frequencies",
-        description: `Inspired by historic rock 'n' roll designs, the Epiphone Guitar delivers big, warm tone with impressive sustain. Its solid mahogany body paired with twin covered humbucking pickups produces a creamy, saturated overdrive tone perfect for hard rock and blues leads.
-
-Individual volume and tone knobs for each pickup, combined with a 3-way toggle switch, give players complete control over their tonal mix. The LockTone Tune-o-matic bridge and stopbar tailpiece maximize string-to-body vibration transfer.`,
-        descriptionTwo: `The comfortable SlimTaper neck profile makes fast riffing effortless, while the traditional cream body binding adds a classic touch of vintage elegance.`,
-        tags: ["Bass", "Wood"],
-        color: ["Black", "Blue", "Yellow"],
-      },
-      {
-        locale: "de",
-        name: "Epiphone Gitarre",
-        title:
-          "Klassische Mahagoni-Archtop-E-Gitarre mit sattem, warmem Humbucker-Sound, singendem Sustain und Vintage-Charme.",
-        subtitle:
-          "Dual-Humbucker-Setup mit separaten Lautstärke- und Klangreglern.",
-        subtitleTwo:
-          "Resonanzstarker Korpus aus massivem Mahagoni für warme, druckvolle Bässe",
-        description: `Inspiriert von historischen Rock-'n'-Roll-Designs, liefert die Epiphone Gitarre einen vollen, warmen Ton mit beeindruckendem Sustain. Ihr massiver Mahagonikorpus in Kombination mit zwei gekapselten Humbucker-Tonabnehmern erzeugt einen cremigen, satten Overdrive-Sound, perfekt für Hard-Rock- und Blues-Leads. Separate Lautstärke- und Klangregler für jeden Tonabnehmer sowie ein 3-Wege-Schalter ermöglichen die volle Kontrolle über den Klangmix. Die LockTone Tune-o-matic Brücke und der Stopbar-Saitenhalter optimieren die Schwingungsübertragung der Saiten auf den Korpus.`,
-        descriptionTwo: `Das komfortable SlimTaper-Halsprofil ermöglicht müheloses schnelles Riffing, während die traditionelle cremefarbene Korpusumrandung einen klassischen Hauch von Vintage-Eleganz verleiht.`,
-        tags: ["Bass", "Holz"],
-        color: ["Schwarz", "Blau", "Gelb"],
-      },
-    ],
-  },
-  {
-    sku: "MWOOP18",
-    price: 190.0,
-    oldPrice: 0,
-    image: "/images/products/MWOOP18.webp",
-    size: ["L", "M", "S", "XL", "XS", "XXL"],
-    categoryNames: [
-      "Acoustic",
-      "Bass",
-      "Electric",
-      "Fretboard",
-      "Lyrica",
-      "Mahogany",
-      "Ukuleles",
-    ],
-    groups: ["Latest"],
-    translations: [
-      {
-        locale: "en",
-        name: "Electric Guitar",
-        title:
-          "Versatile dual-humbucker electric guitar featuring smooth body contours, fast neck playability, and high-output tone.",
-        subtitle: "Modern double-cutaway design for easy upper fret access.",
-        subtitleTwo:
-          "Solid hardwood construction providing great stability and dynamic bite",
-        description: `Designed as an adaptable workhorse, this Electric Guitar handles everything from crystal-clear clean chords to heavy gain riffs with ease. Its dual humbucking pickups naturally block 60-cycle hum, ensuring quiet operation when playing through high-gain amplifiers.
-
-The contoured body fits comfortably against the player whether seated or standing, and the fast-action satin neck allows quick position shifts across the fretboard. Reliable sealed die-cast tuning heads maintain pitch accuracy during vigorous playing.`,
-        descriptionTwo: `An ideal option for gigging musicians needing a dependable back-up instrument or students looking for a versatile electric guitar to explore different playing styles.`,
-        tags: [],
-        color: ["Black", "Blue", "Brown", "Green", "Red", "Yellow"],
-      },
-      {
-        locale: "de",
-        name: "Elektrische Gitarre",
-        title:
-          "Vielseitige E-Gitarre mit zwei Humbuckern, die sich durch geschmeidige Korpuskonturen, schnelle Bespielbarkeit des Halses und einen kraftvollen Klang auszeichnet.",
-        subtitle:
-          "Modernes Double-Cutaway-Design für leichten Zugang zu den oberen Bünden.",
-        subtitleTwo:
-          "Massive Hartholzkonstruktion für hohe Stabilität und dynamische Bissfestigkeit",
-        description: `Diese E-Gitarre ist ein vielseitiges Arbeitstier und meistert mühelos alles von kristallklaren Akkorden bis hin zu verzerrten Riffs. Ihre beiden Humbucker-Tonabnehmer unterdrücken auf natürliche Weise das 60-Hz-Brummen und gewährleisten so einen rauscharmen Betrieb auch über High-Gain-Verstärker. Der ergonomisch geformte Korpus liegt sowohl im Sitzen als auch im Stehen angenehm am Körper an, und der seidenmatte Hals ermöglicht schnelle Lagenwechsel über das gesamte Griffbrett. Zuverlässige, gekapselte Druckguss-Mechaniken sorgen für präzise Stimmungen auch bei intensivem Spiel.`,
-        descriptionTwo: `Eine ideale Option für Musiker, die regelmäßig auftreten und ein zuverlässiges Ersatzinstrument benötigen, oder für Schüler, die eine vielseitige E-Gitarre suchen, um verschiedene Spielstile auszuprobieren.`,
-        tags: [],
-        color: ["Schwarz", "Blau", "Braun", "Grün", "Rot", "Gelb"],
-      },
-    ],
-  },
-  {
-    sku: "MWOOP19",
-    price: 120.0,
-    oldPrice: 150.0,
-    image: "/images/products/MWOOP12.webp",
-    size: ["L", "M", "S", "XL", "XS", "XXL"],
-    categoryNames: [
-      "8",
-      "Accessories",
-      "Acoustic",
-      "Lyrica",
-      "Nato",
-      "Rosewood",
-      "Ukuleles",
-    ],
-    groups: ["Latest", "Special"],
-    translations: [
-      {
-        locale: "en",
-        name: "Electric Guitar",
-        title:
-          "Compact intermediate electric guitar engineered with snappy response, lightweight body, and versatile pickup voicing.",
-        subtitle: "Lightweight, beginner-friendly body with fast neck profile.",
-        subtitleTwo:
-          "All-purpose pickup configuration suitable for diverse genres",
-        description: `Offering great tone and playability in an accessible package, this Electric Guitar is designed for students and gigging players alike. The lightweight body reduces shoulder strain during extended practice sessions without sacrificing natural tone and sustain.
-
-Equipped with a flexible pickup setup and intuitive master controls, dialing in bright rhythm tones or thick overdrive lead tones takes just seconds. The smooth maple neck and rosewood-style fretboard provide a comfortable feel under your fingers.`,
-        descriptionTwo: `Factory-inspected for precise action and intonation, this model delivers immediate out-of-the-box playability and exceptional value.`,
-        tags: ["String", "Wood"],
+          "With its distinctive Goldtop finish, traditional control layout, and comfortable neck profile, this model brings classic Les Paul character to a modern player's setup.",
+        tags: ["Electric", "6 String", "Mahogany"],
         color: ["Yellow"],
       },
       {
         locale: "de",
-        name: "Elektrische Gitarre",
+        name: "Epiphone Les Paul Standard 50s Goldtop",
         title:
-          "Kompakte E-Gitarre für Fortgeschrittene mit knackiger Ansprache, leichtem Korpus und vielseitigen Tonabnehmern.",
+          "Klassische Single-Cut-E-Gitarre mit Mahagonikorpus, Ahorndecke und warmem Dual-Humbucker-Sound.",
         subtitle:
-          "Leichter, anfängerfreundlicher Korpus mit schnellem Halsprofil.",
+          "Traditionelle Les-Paul-Konstruktion mit komfortablem Spielgefühl im Vintage-Stil.",
         subtitleTwo:
-          "Universelle Tonabnehmerkonfiguration, geeignet für verschiedene Musikrichtungen",
-        description: `Diese E-Gitarre bietet großartigen Klang und hervorragende Bespielbarkeit in einem erschwinglichen Paket und ist sowohl für Schüler als auch für professionelle Musiker geeignet. Der leichte Korpus reduziert die Schulterbelastung bei längeren Übungseinheiten, ohne dabei den natürlichen Klang und das Sustain zu beeinträchtigen. Dank flexibler Tonabnehmer und intuitiver Master-Regler lassen sich brillante Rhythmus- oder fette Overdrive-Soli in Sekundenschnelle einstellen. Der geschmeidige Ahornhals und das Griffbrett in Palisanderoptik sorgen für ein angenehmes Spielgefühl.`,
-        descriptionTwo: `Dieses Modell wurde im Werk auf präzise Mechanik und Intonation geprüft und bietet sofortige Spielbarkeit direkt nach dem Auspacken sowie ein außergewöhnliches Preis-Leistungs-Verhältnis.`,
-        tags: ["Saite", "Holz"],
+          "Entwickelt für Blues, Rock, Classic Rock und ausdrucksstarke Soli",
+        description: `Die Epiphone Les Paul Standard 50s Goldtop verbindet das klassische Single-Cutaway-Design mit einem warmen und kraftvollen E-Gitarrenklang. Der Mahagonikorpus und die Ahorndecke bilden die Grundlage für langes Sustain und eine reiche harmonische Ansprache.
+
+Die beiden Humbucker liefern sowohl warme Clean-Sounds als auch kräftigen Overdrive und machen die Gitarre zu einer vielseitigen Wahl für Blues, Classic Rock, Hard Rock und Lead-Spiel.`,
+        descriptionTwo:
+          "Das charakteristische Goldtop-Finish, das traditionelle Bedienlayout und das komfortable Halsprofil verleihen diesem Modell einen unverwechselbaren klassischen Charakter.",
+        tags: ["E-Gitarre", "6 Saiten", "Mahagoni"],
         color: ["Gelb"],
       },
     ],
   },
   {
-    sku: "MWOOP21",
-    price: 120.0,
+    sku: "MWOOP11",
+    price: 599,
     oldPrice: 0,
-    image: "/images/products/MWOOP21.webp",
-    size: ["L", "M", "S", "XL", "XS", "XXL"],
-    categoryNames: [
-      "Accessories",
-      "Acoustic",
-      "Bass",
-      "Electric",
-      "Mahogany",
-      "Nato",
-      "String",
-      "Ukuleles",
-      "Wood",
-    ],
-    groups: ["Latest"],
+    image: "/images/products/Ovation-Celebrity-Elite.webp",
+    groups: ["Featured"],
+    categoryNames: ["Acoustic", "Acoustic-Electric", "6 String"],
     translations: [
       {
         locale: "en",
-        name: "Bass Guitar",
+        name: "Ovation Celebrity Elite",
         title:
-          "4-string electric bass guitar delivering deep low-end punch, tight attack, and clear fundamental note clarity.",
-        subtitle: "Split-coil pickup design providing classic low-end thump.",
+          "Stage-ready acoustic-electric guitar with a rounded composite body and clear amplified projection.",
+        subtitle:
+          "Comfortable cutaway design with an acoustic voice suited to live performance.",
         subtitleTwo:
-          "34-inch long scale length for optimal string tension and projection",
-        description: `Anchor the groove with this powerful 4-string Bass Guitar. Built with a full 34-inch scale length, it maintains crisp string tension across all notes, ensuring your low frequencies sound focused and tight in any rhythm section.
+          "Built for reliable amplification, rehearsals, and stage use",
+        description: `The Ovation Celebrity Elite is an acoustic-electric guitar designed for players who need dependable performance both acoustically and through an amplifier. Its distinctive rounded composite body provides a comfortable playing position while helping control feedback in amplified environments.
 
-The classic split single-coil bass pickup delivers legendary mid-range growl and deep bottom-end punch. Simple master volume and tone controls make it simple to adapt your sound from smooth vintage motown warmth to snappy modern rock drive.`,
-        descriptionTwo: `A solid heavy-duty bridge ensures maximum vibration transfer into the body wood, while open-gear tuners keep your tuning stable throughout energetic sets.`,
-        tags: ["Bass", "Nato"],
-        color: ["Pink", "Black", "Green", "Red", "Yellow"],
+The cutaway gives convenient access to the upper frets, while the integrated electronics make it easy to connect the guitar directly to an acoustic amplifier or PA system. Its balanced acoustic response works well for strumming, songwriting, and live accompaniment.`,
+        descriptionTwo:
+          "A practical choice for performers who want the familiar feel of an acoustic guitar with the flexibility and control required for the stage.",
+        tags: ["Acoustic", "Acoustic-Electric", "6 String"],
+        color: ["Black", "Blue"],
       },
       {
         locale: "de",
-        name: "Bassgitarre",
+        name: "Ovation Celebrity Elite",
         title:
-          "4-saitiger E-Bass mit druckvollem Tiefbass, präzisem Attack und klarer Grundtonwiedergabe.",
+          "Bühnentaugliche elektroakustische Gitarre mit rundem Verbundkorpus und klarer verstärkter Projektion.",
         subtitle:
-          "Split-Coil-Tonabnehmerdesign für den klassischen, druckvollen Bass.",
+          "Komfortables Cutaway-Design mit einem ausgewogenen akustischen Klang.",
         subtitleTwo:
-          "34 Zoll lange Mensur für optimale Saitenspannung und Projektion",
-        description: `Mit diesem kraftvollen 4-Saiter-Bass gibst du dem Groove den nötigen Halt. Dank der vollen 34-Zoll-Mensur bleibt die Saitenspannung über den gesamten Ton konstant, sodass deine tiefen Frequenzen in jeder Rhythmusgruppe fokussiert und druckvoll klingen. Der klassische Split-Single-Coil-Bass-Tonabnehmer liefert legendäres Mitten-Growl und druckvolle Bässe. Mit den einfachen Master-Volume- und Tonreglern lässt sich der Sound mühelos anpassen – von sanftem Vintage-Motown-Wärme bis hin zu knackigem, modernem Rock-Drive.`,
-        descriptionTwo: `Ein stabiler, robuster Steg sorgt für maximale Vibrationsübertragung in das Korpusholz, während offene Mechaniken die Stimmung auch bei energiegeladenen Sets stabil halten.`,
-        tags: ["Bass", "Nato"],
-        color: ["Rosa", "Schwarz", "Grün", "Rot", "Gelb"],
+          "Entwickelt für zuverlässige Verstärkung, Proben und Live-Auftritte",
+        description: `Die Ovation Celebrity Elite ist eine elektroakustische Gitarre für Musiker, die sowohl unverstärkt als auch über einen Verstärker zuverlässig spielen möchten. Der charakteristische abgerundete Korpus aus Verbundmaterial sorgt für eine komfortable Spielposition und hilft gleichzeitig dabei, Rückkopplungen bei verstärktem Spiel zu reduzieren.
+
+Das Cutaway ermöglicht einen bequemen Zugang zu den höheren Bünden, während die integrierte Elektronik den direkten Anschluss an einen Akustikverstärker oder ein PA-System ermöglicht.`,
+        descriptionTwo:
+          "Eine praktische Wahl für Musiker, die das Spielgefühl einer Akustikgitarre mit der Flexibilität einer bühnentauglichen Verstärkung verbinden möchten.",
+        tags: ["Akustik", "Elektroakustisch", "6 Saiten"],
+        color: ["Schwarz", "Blau"],
+      },
+    ],
+  },
+  {
+    sku: "MWOOP10",
+    price: 1299,
+    oldPrice: 0,
+    image: "/images/products/Ibanez-Premium-RG1121PB.webp",
+    groups: ["Featured"],
+    categoryNames: ["Electric", "6 String", "Maple"],
+    translations: [
+      {
+        locale: "en",
+        name: "Ibanez RG Series",
+        title:
+          "Modern high-performance electric guitar with a fast neck, aggressive body shape, and versatile pickup configuration.",
+        subtitle:
+          "Built for precise lead playing, riffs, and high-gain performance.",
+        subtitleTwo:
+          "Comfortable double-cutaway body with excellent upper-fret access",
+        description: `The Ibanez RG Series is designed for players who value speed, precision, and versatility. Its streamlined double-cutaway body provides excellent access to the upper frets, while the comfortable neck supports fast runs, bends, and technical playing.
+
+The versatile pickup configuration covers everything from articulate clean tones to powerful high-gain sounds. A tremolo bridge adds additional expressive possibilities for modern rock and metal playing.`,
+        descriptionTwo:
+          "With its distinctive high-performance styling and comfortable playing position, this guitar is equally suited to practice, recording, and demanding live performances.",
+        tags: ["Electric", "6 String"],
+        color: ["Yellow", "Black"],
+      },
+      {
+        locale: "de",
+        name: "Ibanez RG Series",
+        title:
+          "Moderne E-Gitarre für anspruchsvolles Spiel mit schnellem Hals, aggressiver Korpusform und vielseitiger Tonabnehmerkonfiguration.",
+        subtitle: "Entwickelt für präzise Soli, Riffs und High-Gain-Spiel.",
+        subtitleTwo:
+          "Komfortabler Double-Cutaway-Korpus mit hervorragendem Zugang zu den hohen Bünden",
+        description: `Die Ibanez RG Series wurde für Musiker entwickelt, die Geschwindigkeit, Präzision und Vielseitigkeit schätzen. Der schlanke Double-Cutaway-Korpus ermöglicht einen hervorragenden Zugang zu den hohen Bünden, während der komfortable Hals schnelle Läufe, Bendings und technische Spielweisen unterstützt.
+
+Die vielseitige Tonabnehmerkonfiguration deckt sowohl klare Clean-Sounds als auch kraftvolle High-Gain-Klänge ab. Ein Tremolo-System erweitert die Ausdrucksmöglichkeiten für moderne Rock- und Metal-Musik.`,
+        descriptionTwo:
+          "Das markante Design und die komfortable Spielposition machen dieses Modell zu einer vielseitigen Wahl für Üben, Studio und Bühne.",
+        tags: ["E-Gitarre", "6 Saiten"],
+        color: ["Gelb", "Schwarz"],
+      },
+    ],
+  },
+  {
+    sku: "MWOOP9",
+    price: 599,
+    oldPrice: 0,
+    image: "/images/products/ESP-LTD-EC-256.webp",
+    groups: ["Featured"],
+    categoryNames: ["Electric", "6 String", "Mahogany", "Rosewood Fretboard"],
+    translations: [
+      {
+        locale: "en",
+        name: "ESP LTD EC-256",
+        title:
+          "Single-cut electric guitar with a mahogany body, dual humbuckers, and powerful sustain.",
+        subtitle:
+          "Classic construction with a comfortable neck and versatile high-output tone.",
+        subtitleTwo:
+          "A strong choice for rock, blues, hard rock, and heavier styles",
+        description: `The ESP LTD EC-256 combines a traditional single-cut body shape with a powerful modern electric guitar sound. Its mahogany construction provides a warm foundation with strong sustain, while the dual humbuckers deliver thick rhythm tones and expressive lead sounds.
+
+The comfortable neck and straightforward control layout make it easy to move between clean passages, classic rock crunch, and heavier distortion. The single-cut design also provides a familiar playing feel for guitarists who prefer a substantial body shape.`,
+        descriptionTwo:
+          "A versatile instrument for players looking for a powerful single-cut electric guitar with a strong visual presence and dependable performance.",
+        tags: ["Electric", "6 String", "Mahogany"],
+        color: ["Black", "Brown"],
+      },
+      {
+        locale: "de",
+        name: "ESP LTD EC-256",
+        title:
+          "Single-Cut-E-Gitarre mit Mahagonikorpus, zwei Humbuckern und langem Sustain.",
+        subtitle:
+          "Klassische Konstruktion mit komfortablem Hals und vielseitigem High-Output-Sound.",
+        subtitleTwo:
+          "Eine starke Wahl für Rock, Blues, Hard Rock und härtere Musikstile",
+        description: `Die ESP LTD EC-256 verbindet die klassische Single-Cut-Korpusform mit einem kraftvollen modernen E-Gitarrenklang. Die Mahagonikonstruktion sorgt für eine warme Basis und langes Sustain, während die beiden Humbucker druckvolle Rhythmusklänge und ausdrucksstarke Soli ermöglichen.
+
+Der komfortable Hals und das übersichtliche Bedienlayout erleichtern den Wechsel zwischen Clean-Sounds, klassischem Rock-Crunch und stärkerer Verzerrung.`,
+        descriptionTwo:
+          "Eine vielseitige Wahl für Musiker, die eine kraftvolle Single-Cut-E-Gitarre mit markanter Optik und zuverlässiger Performance suchen.",
+        tags: ["E-Gitarre", "6 Saiten", "Mahagoni"],
+        color: ["Schwarz", "Braun"],
+      },
+    ],
+  },
+  {
+    sku: "MWOOP8",
+    price: 849,
+    oldPrice: 0,
+    image: "/images/products/Fender-Player-II-Precision-Bass.webp",
+    groups: ["Featured", "Special"],
+    categoryNames: ["Bass", "4 String", "Maple Fretboard"],
+    translations: [
+      {
+        locale: "en",
+        name: "Fender Player II Precision Bass",
+        title:
+          "Classic four-string electric bass with a solid Precision Bass body and powerful split-coil tone.",
+        subtitle:
+          "Modern playability combined with the unmistakable character of a Precision Bass.",
+        subtitleTwo:
+          "Excellent foundation for rock, blues, pop, and studio recording",
+        description: `The Fender Player II Precision Bass delivers the familiar punch and low-end authority associated with the classic Precision Bass design. Its contoured body and comfortable modern neck profile make it easy to play for extended sessions.
+
+The split-coil Precision Bass pickup provides strong fundamentals, focused mids, and a powerful low end that sits naturally inside a mix. The straightforward control layout keeps the instrument easy to operate while preserving its distinctive bass character.`,
+        descriptionTwo:
+          "A dependable four-string bass for players who want classic Precision Bass response with modern playability and reliable hardware.",
+        tags: ["Bass", "4 String"],
+        color: ["Black", "Grey", "White"],
+      },
+      {
+        locale: "de",
+        name: "Fender Player II Precision Bass",
+        title:
+          "Klassischer viersaitiger E-Bass mit Precision-Bass-Korpus und kraftvollem Split-Coil-Sound.",
+        subtitle:
+          "Modernes Spielgefühl kombiniert mit dem charakteristischen Klang eines Precision Bass.",
+        subtitleTwo:
+          "Eine hervorragende Basis für Rock, Blues, Pop und Studioaufnahmen",
+        description: `Der Fender Player II Precision Bass liefert den bekannten Druck und die kraftvollen tiefen Frequenzen des klassischen Precision-Bass-Designs. Der konturierte Korpus und das moderne Halsprofil sorgen auch bei längeren Sessions für ein komfortables Spielgefühl.
+
+Der Split-Coil-Tonabnehmer erzeugt klare Grundtöne, fokussierte Mitten und einen druckvollen Bassbereich, der sich problemlos in einen Mix einfügt.`,
+        descriptionTwo:
+          "Ein zuverlässiger Viersaiter für Musiker, die den klassischen Precision-Bass-Charakter mit moderner Bespielbarkeit verbinden möchten.",
+        tags: ["Bass", "4 Saiten"],
+        color: ["Schwarz", "Grau", "Weiß"],
+      },
+    ],
+  },
+  {
+    sku: "MWOOP6",
+    price: 499,
+    oldPrice: 0,
+    image: "/images/products/Ibanez-SR300E.webp",
+    groups: ["Featured"],
+    categoryNames: ["Bass", "4 String", "Jatoba Fretboard"],
+    translations: [
+      {
+        locale: "en",
+        name: "Ibanez SR300E",
+        title:
+          "Modern four-string bass with a lightweight body, fast neck, and versatile dual-humbucker setup.",
+        subtitle:
+          "Slim ergonomic design built for comfortable long-session playing.",
+        subtitleTwo:
+          "Balanced response for rock, pop, funk, and modern bass styles",
+        description: `The Ibanez SR300E combines a lightweight ergonomic body with a fast and comfortable neck, making it a practical choice for players who spend long hours practicing or performing.
+
+Its dual-humbucker configuration provides a broad tonal range, from clear and articulate bass lines to powerful low-end sounds. The comfortable body shape sits naturally against the player and makes movement across the instrument effortless.`,
+        descriptionTwo:
+          "A versatile modern bass designed for players who want comfortable handling, flexible tone, and reliable performance without an oversized body.",
+        tags: ["Bass", "4 String"],
+        color: ["Black", "Blue"],
+      },
+      {
+        locale: "de",
+        name: "Ibanez SR300E",
+        title:
+          "Moderner viersaitiger Bass mit leichtem Korpus, schnellem Hals und vielseitiger Dual-Humbucker-Konfiguration.",
+        subtitle:
+          "Schlankes ergonomisches Design für komfortables Spielen über lange Zeit.",
+        subtitleTwo:
+          "Ausgewogene Ansprache für Rock, Pop, Funk und moderne Bass-Stile",
+        description: `Der Ibanez SR300E kombiniert einen leichten, ergonomischen Korpus mit einem schnellen und komfortablen Hals. Dadurch eignet er sich besonders für Musiker, die lange üben oder auftreten.
+
+Die beiden Humbucker ermöglichen eine große Klangvielfalt – von klaren und präzisen Basslinien bis hin zu druckvollen tiefen Frequenzen. Die komfortable Korpusform liegt natürlich am Körper an und erleichtert das Spielen über das gesamte Griffbrett.`,
+        descriptionTwo:
+          "Ein vielseitiger moderner Bass für Musiker, die komfortable Handhabung, flexible Sounds und zuverlässige Performance suchen.",
+        tags: ["Bass", "4 Saiten"],
+        color: ["Schwarz", "Blau"],
+      },
+    ],
+  },
+  {
+    sku: "MWOOP5",
+    price: 299,
+    oldPrice: 0,
+    image: "/images/products/Natural-Dreadnought-Acoustic.webp",
+    groups: ["Featured", "Bestseller"],
+    categoryNames: ["Acoustic", "6 String"],
+    translations: [
+      {
+        locale: "en",
+        name: "Natural Dreadnought Acoustic",
+        title:
+          "Traditional dreadnought acoustic guitar with a warm natural finish and balanced projection.",
+        subtitle:
+          "Comfortable everyday acoustic designed for chords, strumming, and songwriting.",
+        subtitleTwo:
+          "A versatile choice for beginners and intermediate players",
+        description: `The Natural Dreadnought Acoustic offers the familiar full-bodied response associated with the classic dreadnought shape. Its large sound chamber provides strong projection and a balanced acoustic voice that works especially well for rhythm playing and songwriting.
+
+The comfortable neck profile makes the instrument approachable for developing players, while the natural finish gives the guitar a clean and timeless appearance. Its versatile response also makes it suitable for fingerpicking and lighter acoustic arrangements.`,
+        descriptionTwo:
+          "An accessible all-purpose acoustic guitar for home practice, songwriting sessions, rehearsals, and casual performances.",
+        tags: ["Acoustic", "6 String"],
+        color: ["Brown"],
+      },
+      {
+        locale: "de",
+        name: "Natural Dreadnought Acoustic",
+        title:
+          "Traditionelle Dreadnought-Akustikgitarre mit natürlichem Finish und ausgewogener Klangprojektion.",
+        subtitle:
+          "Komfortable Alltagsgitarre für Akkorde, Strumming und Songwriting.",
+        subtitleTwo:
+          "Eine vielseitige Wahl für Anfänger und fortgeschrittene Spieler",
+        description: `Die Natural Dreadnought Acoustic bietet den bekannten vollmundigen Klang einer klassischen Dreadnought. Der große Resonanzkörper sorgt für eine kräftige Projektion und einen ausgewogenen Klang, der sich besonders für Rhythmusspiel und Songwriting eignet.
+
+Das komfortable Halsprofil macht die Gitarre auch für Anfänger zugänglich, während das natürliche Finish für eine zeitlose Optik sorgt.`,
+        descriptionTwo:
+          "Eine vielseitige Akustikgitarre für das Üben zu Hause, Songwriting, Proben und kleinere Auftritte.",
+        tags: ["Akustik", "6 Saiten"],
+        color: ["Braun"],
+      },
+    ],
+  },
+  {
+    sku: "MWOOP4",
+    price: 449,
+    oldPrice: 0,
+    image: "/images/products/Vintage-Precision-Bass.webp",
+    groups: ["Featured", "Bestseller"],
+    categoryNames: ["Bass", "4 String"],
+    translations: [
+      {
+        locale: "en",
+        name: "Vintage Precision Bass",
+        title:
+          "Classic four-string bass with a familiar Precision-style body and powerful split-coil character.",
+        subtitle:
+          "Straightforward passive design for a focused and punchy bass response.",
+        subtitleTwo:
+          "Ideal for rock, blues, soul, pop, and classic-style grooves",
+        description: `The Vintage Precision Bass is built around the familiar four-string bass format that has shaped countless recordings and live performances. Its traditional body design provides a comfortable playing position while maintaining the solid low-end response expected from a Precision-style instrument.
+
+The split-coil pickup delivers a focused midrange, punchy attack, and strong fundamental notes that remain clear in a full band mix. Simple volume and tone controls make shaping the sound quick and intuitive.`,
+        descriptionTwo:
+          "A straightforward bass for players who prefer classic design, dependable controls, and a strong traditional foundation for groove-oriented playing.",
+        tags: ["Bass", "4 String"],
+        color: ["White", "Red", "Yellow"],
+      },
+      {
+        locale: "de",
+        name: "Vintage Precision Bass",
+        title:
+          "Klassischer viersaitiger Bass mit vertrauter Precision-Korpusform und kraftvollem Split-Coil-Charakter.",
+        subtitle:
+          "Einfaches passives Design für einen fokussierten und druckvollen Bassklang.",
+        subtitleTwo: "Ideal für Rock, Blues, Soul, Pop und klassische Grooves",
+        description: `Der Vintage Precision Bass basiert auf dem bewährten viersaitigen Bass-Format, das zahlreiche Aufnahmen und Live-Auftritte geprägt hat. Die traditionelle Korpusform sorgt für eine komfortable Spielposition und einen kräftigen Tiefbass.
+
+Der Split-Coil-Tonabnehmer liefert fokussierte Mitten, präzisen Attack und klare Grundtöne, die sich auch in einer kompletten Bandbesetzung gut durchsetzen.`,
+        descriptionTwo:
+          "Ein unkomplizierter Bass für Musiker, die klassisches Design, intuitive Bedienelemente und einen druckvollen Grundsound bevorzugen.",
+        tags: ["Bass", "4 Saiten"],
+        color: ["Weiß", "Rot", "Gelb"],
+      },
+    ],
+  },
+  {
+    sku: "MWOOP3",
+    price: 279,
+    oldPrice: 0,
+    image: "/images/products/Ibanez-TMB100.webp",
+    groups: ["Bestseller", "Special"],
+    categoryNames: ["Bass", "4 String", "Jatoba Fretboard"],
+    translations: [
+      {
+        locale: "en",
+        name: "Ibanez TMB100",
+        title:
+          "Four-string Talman-style bass combining a vintage-inspired body with flexible P and J pickup tones.",
+        subtitle:
+          "Comfortable bass platform with a distinctive retro-modern appearance.",
+        subtitleTwo:
+          "Versatile pickup combination for rock, indie, pop, and alternative styles",
+        description: `The Ibanez TMB100 combines a distinctive Talman-inspired body with a versatile four-string bass configuration. Its comfortable body shape provides a familiar playing position while giving the instrument a unique visual identity.
+
+The combination of split-coil and single-coil style pickups offers a wide tonal range, from thick and focused low frequencies to more articulate and cutting bass tones. The instrument works equally well for straightforward rock lines and more expressive modern arrangements.`,
+        descriptionTwo:
+          "A characterful bass for players looking for something different from traditional Precision and Jazz Bass designs while keeping a familiar four-string format.",
+        tags: ["Bass", "4 String"],
+        color: ["Green", "Brown"],
+      },
+      {
+        locale: "de",
+        name: "Ibanez TMB100",
+        title:
+          "Viersaitiger Bass im Talman-Stil mit Vintage-inspirierter Korpusform und vielseitiger P/J-Tonabnehmerkonfiguration.",
+        subtitle: "Komfortabler Bass mit markanter Retro-Modern-Optik.",
+        subtitleTwo:
+          "Vielseitige Tonabnehmerkombination für Rock, Indie, Pop und Alternative",
+        description: `Der Ibanez TMB100 verbindet eine markante Talman-inspirierte Korpusform mit einer vielseitigen viersaitigen Basskonfiguration. Der komfortable Korpus bietet eine vertraute Spielposition und verleiht dem Instrument gleichzeitig eine eigenständige Optik.
+
+Die Kombination aus Split-Coil- und Single-Coil-Tonabnehmer ermöglicht unterschiedliche Klangfarben – von druckvollen tiefen Frequenzen bis hin zu einem artikulierten und durchsetzungsfähigen Basssound.`,
+        descriptionTwo:
+          "Ein charaktervoller Bass für Musiker, die eine Alternative zu klassischen Precision- und Jazz-Bass-Formen suchen.",
+        tags: ["Bass", "4 Saiten"],
+        color: ["Grün", "Braun"],
+      },
+    ],
+  },
+  {
+    sku: "MWOOP1",
+    price: 999,
+    oldPrice: 0,
+    image: "/images/products/Ibanez-RG550.webp",
+    groups: ["Featured"],
+    categoryNames: ["Electric", "6 String", "Maple Fretboard"],
+    translations: [
+      {
+        locale: "en",
+        name: "Ibanez RG550",
+        title:
+          "High-performance six-string electric guitar with an HSH pickup configuration and expressive tremolo system.",
+        subtitle:
+          "Fast-playing neck and double-cutaway body designed for technical guitar work.",
+        subtitleTwo:
+          "A versatile platform for rock, metal, fusion, and lead playing",
+        description: `The Ibanez RG550 is designed around speed, precision, and expressive electric guitar performance. Its double-cutaway body provides excellent access to the upper frets, while the fast neck supports technical runs, bends, and rapid position changes.
+
+The HSH pickup configuration combines powerful humbuckers with a versatile middle pickup, allowing the guitar to move from articulate clean tones to aggressive high-gain sounds. The tremolo system adds further control for expressive pitch effects.`,
+        descriptionTwo:
+          "A strong choice for players who need a fast, versatile instrument capable of handling demanding modern guitar techniques.",
+        tags: ["Electric", "6 String"],
+        color: ["Red", "Blue"],
+      },
+      {
+        locale: "de",
+        name: "Ibanez RG550",
+        title:
+          "Hochleistungs-E-Gitarre mit sechs Saiten, HSH-Tonabnehmerkonfiguration und ausdrucksstarkem Tremolo-System.",
+        subtitle:
+          "Schneller Hals und Double-Cutaway-Korpus für anspruchsvolles Gitarrenspiel.",
+        subtitleTwo:
+          "Eine vielseitige Plattform für Rock, Metal, Fusion und Solospiel",
+        description: `Die Ibanez RG550 wurde für Geschwindigkeit, Präzision und ausdrucksstarkes E-Gitarrenspiel entwickelt. Der Double-Cutaway-Korpus ermöglicht einen hervorragenden Zugang zu den hohen Bünden, während der schnelle Hals technische Läufe, Bendings und schnelle Lagenwechsel unterstützt.
+
+Die HSH-Tonabnehmerkonfiguration kombiniert kraftvolle Humbucker mit einem vielseitigen mittleren Tonabnehmer. Dadurch reicht das Klangspektrum von klaren Clean-Sounds bis zu aggressiven High-Gain-Klängen.`,
+        descriptionTwo:
+          "Eine hervorragende Wahl für Spieler, die ein schnelles und vielseitiges Instrument für anspruchsvolle moderne Gitarrentechniken suchen.",
+        tags: ["E-Gitarre", "6 Saiten"],
+        color: ["Rot", "Blau"],
+      },
+    ],
+  },
+  {
+    sku: "MWOOP2",
+    price: 999,
+    oldPrice: 0,
+    image: "/images/products/Taylor-214ce.webp",
+    groups: ["Bestseller", "Special"],
+    categoryNames: ["Acoustic", "Acoustic-Electric", "6 String", "Spruce"],
+    translations: [
+      {
+        locale: "en",
+        name: "Taylor 214ce",
+        title:
+          "Grand Auditorium acoustic-electric guitar offering balanced projection, comfortable playability, and versatile stage performance.",
+        subtitle:
+          "Comfortable cutaway body suited to both fingerstyle and full chord playing.",
+        subtitleTwo:
+          "Solid spruce top for a clear and responsive acoustic voice",
+        description: `The Taylor 214ce combines the versatile Grand Auditorium body shape with a comfortable playing feel and balanced acoustic response. Its cutaway provides convenient access to the upper frets, making the instrument equally useful for rhythm work, fingerstyle playing, and melodic arrangements.
+
+The spruce top provides a clear and responsive tone that works well across a wide range of playing styles. Integrated electronics also make the guitar suitable for rehearsals, recording, and live performance.`,
+        descriptionTwo:
+          "A versatile acoustic-electric guitar for players who want a balanced instrument that can move easily between home practice, songwriting, studio work, and the stage.",
+        tags: ["Acoustic", "Acoustic-Electric", "6 String"],
+        color: ["Brown"],
+      },
+      {
+        locale: "de",
+        name: "Taylor 214ce",
+        title:
+          "Grand-Auditorium-Elektroakustikgitarre mit ausgewogener Projektion, komfortabler Bespielbarkeit und vielseitiger Bühnentauglichkeit.",
+        subtitle:
+          "Komfortabler Cutaway-Korpus für Fingerstyle und Akkordspiel.",
+        subtitleTwo:
+          "Massive Fichtendecke für einen klaren und dynamischen Akustikklang",
+        description: `Die Taylor 214ce verbindet die vielseitige Grand-Auditorium-Korpusform mit einem komfortablen Spielgefühl und einer ausgewogenen Klangprojektion. Das Cutaway ermöglicht einen einfachen Zugang zu den höheren Bünden und macht die Gitarre sowohl für Rhythmusspiel als auch für Fingerstyle und melodische Arrangements geeignet.
+
+Die Fichtendecke erzeugt einen klaren und dynamischen Klang, während die integrierte Elektronik die Gitarre auch für Proben, Aufnahmen und Live-Auftritte geeignet macht.`,
+        descriptionTwo:
+          "Eine vielseitige elektroakustische Gitarre für Musiker, die ein ausgewogenes Instrument für zu Hause, Songwriting, Studio und Bühne suchen.",
+        tags: ["Akustik", "Elektroakustisch", "6 Saiten"],
+        color: ["Braun"],
+      },
+    ],
+  },
+  {
+    sku: "MWOOP22",
+    price: 449,
+    oldPrice: 0,
+    image: "/images/products/Natural-Precision-Bass.webp",
+    groups: ["Latest", "Special"],
+    categoryNames: ["Bass", "4 String", "Maple Fretboard"],
+    translations: [
+      {
+        locale: "en",
+        name: "Natural Precision Bass",
+        title:
+          "Classic four-string bass with a familiar Precision-style body and focused split-coil response.",
+        subtitle:
+          "Simple passive controls with a strong and dependable low-end foundation.",
+        subtitleTwo:
+          "Suitable for rock, pop, blues, soul, and classic groove-based playing",
+        description: `The Natural Precision Bass is built around a familiar four-string design with a balanced body shape and a focused passive bass response. Its split-coil pickup produces a strong fundamental tone with punchy mids and controlled low frequencies.
+
+The simple volume and tone controls make the instrument easy to use, while the comfortable neck supports both steady rhythm playing and more active bass lines.`,
+        descriptionTwo:
+          "A straightforward four-string bass with a clean natural appearance and a classic tonal foundation suitable for a wide range of styles.",
+        tags: ["Bass", "4 String"],
+        color: ["Brown", "White"],
+      },
+      {
+        locale: "de",
+        name: "Natural Precision Bass",
+        title:
+          "Klassischer viersaitiger Bass mit vertrauter Precision-Korpusform und fokussiertem Split-Coil-Sound.",
+        subtitle:
+          "Einfache passive Regler und ein kräftiges, zuverlässiges Klangfundament.",
+        subtitleTwo:
+          "Geeignet für Rock, Pop, Blues, Soul und klassische Groove-Stile",
+        description: `Der Natural Precision Bass basiert auf einem bewährten viersaitigen Design mit ausgewogener Korpusform und fokussiertem passivem Basssound. Der Split-Coil-Tonabnehmer liefert einen kräftigen Grundton mit druckvollen Mitten und kontrollierten tiefen Frequenzen.
+
+Die einfachen Volume- und Tone-Regler machen das Instrument unkompliziert, während der komfortable Hals sowohl ruhiges Rhythmusspiel als auch aktivere Basslinien unterstützt.`,
+        descriptionTwo:
+          "Ein unkomplizierter Viersaiter mit natürlicher Optik und klassischem Klangfundament für viele Musikstile.",
+        tags: ["Bass", "4 Saiten"],
+        color: ["Braun", "Weiß"],
+      },
+    ],
+  },
+  {
+    sku: "MWOOP17",
+    price: 399,
+    oldPrice: 0,
+    image: "/images/products/Classic-PJ-Bass.webp",
+    groups: ["Latest"],
+    categoryNames: ["Bass", "4 String", "Maple Fretboard"],
+    translations: [
+      {
+        locale: "en",
+        name: "Classic PJ Bass",
+        title:
+          "Versatile four-string electric bass combining punchy split-coil character with a defined bridge pickup voice.",
+        subtitle:
+          "Traditional PJ-style layout for a broad range of bass tones.",
+        subtitleTwo: "A practical choice for rock, pop, indie, and studio work",
+        description: `The Classic PJ Bass combines two familiar electric bass pickup voices in one versatile instrument. The split-coil pickup provides a strong and focused foundation, while the bridge pickup adds additional definition and bite for more articulate bass lines.
+
+Its comfortable body and familiar neck layout make it approachable for both new players and experienced musicians. The straightforward control setup allows the two pickup voices to be blended for a wide range of sounds.`,
+        descriptionTwo:
+          "A flexible four-string bass for musicians who want more tonal variety than a traditional single-pickup design can provide.",
+        tags: ["Bass", "4 String"],
+        color: ["Green", "Blue"],
+      },
+      {
+        locale: "de",
+        name: "Classic PJ Bass",
+        title:
+          "Vielseitiger viersaitiger E-Bass mit druckvollem Split-Coil-Sound und definierter Bridge-Tonabnehmer-Ansprache.",
+        subtitle:
+          "Traditionelles PJ-Layout für eine große Auswahl an Basssounds.",
+        subtitleTwo:
+          "Eine praktische Wahl für Rock, Pop, Indie und Studioarbeit",
+        description: `Der Classic PJ Bass kombiniert zwei bekannte Tonabnehmercharaktere in einem vielseitigen Instrument. Der Split-Coil-Tonabnehmer liefert ein kräftiges und fokussiertes Fundament, während der Steg-Tonabnehmer zusätzliche Definition und Attack für präzisere Basslinien bietet.
+
+Der komfortable Korpus und das vertraute Halslayout machen den Bass sowohl für Einsteiger als auch für erfahrene Musiker interessant.`,
+        descriptionTwo:
+          "Ein flexibler Viersaiter für Musiker, die mehr klangliche Möglichkeiten als bei einem klassischen Single-Pickup-Bass wünschen.",
+        tags: ["Bass", "4 Saiten"],
+        color: ["Grün", "Blau"],
+      },
+    ],
+  },
+  {
+    sku: "MWOOP18",
+    price: 499,
+    oldPrice: 0,
+    image: "/images/products/Yamaha-TRBX305.webp",
+    groups: ["Latest"],
+    categoryNames: ["Bass", "5 String", "Maple"],
+    translations: [
+      {
+        locale: "en",
+        name: "Yamaha TRBX305",
+        title:
+          "Modern five-string bass combining powerful low-end response with flexible active electronics and a comfortable body shape.",
+        subtitle:
+          "Extended-range bass designed for modern players and demanding low-end work.",
+        subtitleTwo:
+          "A strong fit for rock, metal, pop, funk, and studio production",
+        description: `The Yamaha TRBX305 is a modern five-string bass designed for players who need extended low-end range without sacrificing playability. Its balanced body shape sits comfortably against the player while the extended scale provides a focused and controlled low B string.
+
+The dual pickup configuration offers a broad tonal range, while the active electronics provide additional control over the instrument's overall character. This makes the bass suitable for everything from clean pop arrangements to aggressive modern rock and metal.`,
+        descriptionTwo:
+          "A versatile five-string instrument for players who want extended range, flexible tone shaping, and a modern stage-ready design.",
+        tags: ["Bass", "5 String"],
+        color: ["Red", "White", "Blue", "Green"],
+      },
+      {
+        locale: "de",
+        name: "Yamaha TRBX305",
+        title:
+          "Moderner fünfsaitiger Bass mit kraftvollem Tiefbass, flexibler aktiver Elektronik und komfortabler Korpusform.",
+        subtitle:
+          "Extended-Range-Bass für moderne Musiker und anspruchsvolle tiefe Frequenzen.",
+        subtitleTwo: "Ideal für Rock, Metal, Pop, Funk und Studioarbeit",
+        description: `Der Yamaha TRBX305 ist ein moderner fünfsaitiger Bass für Musiker, die einen erweiterten Tiefbassbereich mit guter Bespielbarkeit verbinden möchten. Die ausgewogene Korpusform liegt komfortabel am Körper an, während die zusätzliche H-Saite einen erweiterten Tonumfang ermöglicht.
+
+Die vielseitige Tonabnehmerkonfiguration und die aktive Elektronik bieten zahlreiche Möglichkeiten zur Klanggestaltung. Dadurch eignet sich der Bass sowohl für klare Pop-Arrangements als auch für modernen Rock und Metal.`,
+        descriptionTwo:
+          "Ein vielseitiger Fünfsaiter für Musiker, die erweiterten Tonumfang, flexible Klanggestaltung und ein modernes bühnentaugliches Design suchen.",
+        tags: ["Bass", "5 Saiten"],
+        color: ["Rot", "Weiß", "Blau", "Grün"],
+      },
+    ],
+  },
+  {
+    sku: "MWOOP19",
+    price: 849,
+    oldPrice: 0,
+    image: "/images/products/PRS-SE-Custom-24.webp",
+    groups: ["Latest", "Special"],
+    categoryNames: [
+      "Electric",
+      "6 String",
+      "Mahogany",
+      "Maple",
+      "Rosewood Fretboard",
+    ],
+    translations: [
+      {
+        locale: "en",
+        name: "PRS SE Custom 24",
+        title:
+          "Versatile double-cut electric guitar with a comfortable body, dual humbuckers, and expressive tremolo system.",
+        subtitle:
+          "Balanced design combining modern playability with classic electric guitar character.",
+        subtitleTwo:
+          "Suitable for clean tones, blues, rock, progressive styles, and high gain",
+        description: `The PRS SE Custom 24 is a versatile double-cut electric guitar designed to cover a wide range of musical styles. Its comfortable body shape provides easy access to the upper frets, while the dual humbuckers deliver everything from articulate clean sounds to powerful distorted tones.
+
+The tremolo bridge adds expressive pitch control, while the 24-fret layout gives players an extended upper register for lead work. The combination of a comfortable neck and versatile electronics makes the instrument equally useful for rhythm and solo playing.`,
+        descriptionTwo:
+          "A modern all-purpose electric guitar for players who want one instrument capable of covering clean, classic, and high-gain sounds.",
+        tags: ["Electric", "6 String"],
+        color: ["Yellow", "Blue", "Red"],
+      },
+      {
+        locale: "de",
+        name: "PRS SE Custom 24",
+        title:
+          "Vielseitige Double-Cut-E-Gitarre mit komfortablem Korpus, zwei Humbuckern und ausdrucksstarkem Tremolo-System.",
+        subtitle:
+          "Ausgewogene Konstruktion mit moderner Bespielbarkeit und klassischem E-Gitarrencharakter.",
+        subtitleTwo:
+          "Geeignet für Clean-Sounds, Blues, Rock, Progressive und High-Gain",
+        description: `Die PRS SE Custom 24 ist eine vielseitige Double-Cut-E-Gitarre für unterschiedlichste Musikstile. Die komfortable Korpusform ermöglicht einen einfachen Zugang zu den hohen Bünden, während die beiden Humbucker von klaren Clean-Sounds bis hin zu kräftigen verzerrten Klängen reichen.
+
+Das Tremolo-System ermöglicht ausdrucksstarke Pitch-Effekte, während die 24 Bünde einen erweiterten Bereich für Solospiel bieten.`,
+        descriptionTwo:
+          "Eine moderne Allround-E-Gitarre für Musiker, die mit einem Instrument klare, klassische und High-Gain-Sounds abdecken möchten.",
+        tags: ["E-Gitarre", "6 Saiten"],
+        color: ["Gelb", "Blau", "Rot"],
+      },
+    ],
+  },
+  {
+    sku: "MWOOP21",
+    price: 599,
+    oldPrice: 0,
+    image: "/images/products/Ibanez-RGA742EX.webp",
+    groups: ["Latest"],
+    categoryNames: ["Electric", "7 String", "Maple Fretboard"],
+    translations: [
+      {
+        locale: "en",
+        name: "Ibanez-RGA742EX",
+        title:
+          "Modern seven-string electric guitar with a fast neck, double-cutaway body, and versatile pickup configuration.",
+        subtitle:
+          "Designed for comfortable upper-fret access and expressive lead playing.",
+        subtitleTwo:
+          "A versatile platform for rock, metal, alternative, and modern guitar styles",
+        description: `The Ibanez RG Series combines a streamlined double-cutaway body with a fast-playing neck and a versatile electric guitar configuration. The ergonomic body provides easy access across the fretboard, making the instrument comfortable for both rhythm and lead playing.
+
+Its pickup configuration offers a broad tonal range, from clear articulate sounds to heavier distorted tones. The tremolo system adds additional control for expressive bends and pitch effects.`,
+        descriptionTwo:
+          "A practical choice for players who want a modern-looking electric guitar with comfortable ergonomics and a wide range of usable tones.",
+        tags: ["Electric", "7 String"],
+        color: ["Pink"],
+      },
+      {
+        locale: "de",
+        name: "Ibanez-RGA742EX",
+        title:
+          "Moderne sechssaitige E-Gitarre mit schnellem Hals, Double-Cutaway-Korpus und vielseitiger Tonabnehmerkonfiguration.",
+        subtitle:
+          "Entwickelt für komfortablen Zugang zu den hohen Bünden und ausdrucksstarkes Solospiel.",
+        subtitleTwo:
+          "Eine vielseitige Plattform für Rock, Metal, Alternative und moderne Gitarrenstile",
+        description: `Die Ibanez RG Series kombiniert einen schlanken Double-Cutaway-Korpus mit einem schnellen Hals und einer vielseitigen E-Gitarren-Konfiguration. Der ergonomische Korpus ermöglicht einen komfortablen Zugang über das gesamte Griffbrett und eignet sich sowohl für Rhythmus- als auch für Solospiel.
+
+Die Tonabnehmerkonfiguration bietet ein breites Klangspektrum von klaren Sounds bis hin zu kräftiger Verzerrung. Das Tremolo-System erweitert die Möglichkeiten für ausdrucksstarke Pitch-Effekte.`,
+        descriptionTwo:
+          "Eine praktische Wahl für Musiker, die eine moderne E-Gitarre mit komfortabler Ergonomie und vielseitigen Sounds suchen.",
+        tags: ["E-Gitarre", "8 Saiten"],
+        color: ["Rosa"],
       },
     ],
   },
   {
     sku: "MWOOP20",
-    price: 80.0,
-    oldPrice: 200.0,
-    image: "/images/products/MWOOP20.webp",
-    size: ["L", "S"],
-    categoryNames: [
-      "Accessories",
-      "Acoustic",
-      "Bass",
-      "Electric",
-      "Fretboard",
-      "String",
-      "Ukuleles",
-      "Wood",
-      "Walnut",
-    ],
+    price: 549,
+    oldPrice: 0,
+    image: "/images/products/Modern-Double-Cut-Electric.webp",
     groups: ["Latest", "Special"],
+    categoryNames: ["Electric", "6 String"],
     translations: [
       {
         locale: "en",
-        name: "Acoustic Guitar",
+        name: "Modern Double-Cut Electric",
         title:
-          "Entry-level acoustic guitar offering warm wood resonances, easy action, and durable laminated tonewood build.",
+          "Accessible double-cut electric guitar with a comfortable body shape and versatile modern tone.",
         subtitle:
-          "Budget-friendly acoustic starter package with authentic dreadnought sound.",
+          "Balanced design for rhythm playing, chords, riffs, and lead work.",
         subtitleTwo:
-          "Comfortable neck profile designed to build finger strength without fatigue",
-        description: `An ideal starting instrument for anyone learning acoustic guitar, this model delivers rich tone and structural reliability at an affordable price point. Its traditional dreadnought body produces a booming natural voice that fills any room.
+          "An affordable choice for players exploring electric guitar styles",
+        description: `The Modern Double-Cut Electric is designed as an approachable all-purpose electric guitar for players developing their technique. Its double-cutaway body provides comfortable access to the upper frets while maintaining a balanced position when playing seated or standing.
 
-The neck is tailored with a comfortable C-profile that helps new players master basic open chords and fingerpicking patterns without excessive hand strain. Smooth fret finishing guarantees comfortable slides up and down the neck.`,
-        descriptionTwo: `Built with durable laminate woods that withstand seasonal humidity shifts, this low-maintenance guitar remains stable and ready to play whenever inspiration strikes.`,
-        tags: ["Bass", "Nato"],
-        color: ["Black", "Blue", "Brown", "Red"],
+The versatile pickup configuration allows the instrument to move from clean chord work to driven rhythm tones and expressive lead playing. The comfortable neck profile also makes it easy to move between positions across the fretboard.`,
+        descriptionTwo:
+          "A practical and affordable electric guitar for students, home players, and musicians looking for a dependable second instrument.",
+        tags: ["Electric", "6 String"],
+        color: ["Black", "Blue", "Grey"],
       },
       {
         locale: "de",
-        name: "Akustikgitarre",
+        name: "Modern Double-Cut Electric",
         title:
-          "Akustikgitarre für Einsteiger mit warmem Holzklang, leichter Bespielbarkeit und robuster Konstruktion aus laminiertem Tonholz.",
+          "Zugängliche Double-Cut-E-Gitarre mit komfortabler Korpusform und vielseitigem modernem Klang.",
         subtitle:
-          "Preisgünstiges Akustik-Starterpaket mit authentischem Dreadnought-Sound.",
+          "Ausgewogenes Design für Rhythmusspiel, Akkorde, Riffs und Soli.",
         subtitleTwo:
-          "Komfortables Halsprofil, das den Aufbau von Fingerkraft ohne Ermüdung fördert.",
-        description: `Dieses Modell ist das ideale Einsteigerinstrument für alle, die Akustikgitarre lernen möchten. Es bietet einen vollen Klang und hohe Stabilität zu einem erschwinglichen Preis. Der traditionelle Dreadnought-Korpus erzeugt einen kräftigen, natürlichen Klang, der jeden Raum erfüllt. Der Hals mit seinem komfortablen C-Profil hilft Anfängern, grundlegende offene Akkorde und Fingerpicking-Muster ohne übermäßige Handbelastung zu erlernen. Die glatte Bundierung garantiert ein angenehmes Gleiten über den gesamten Hals.`,
-        descriptionTwo: `Diese Gitarre ist aus robusten Laminathölzern gefertigt, die saisonalen Schwankungen der Luftfeuchtigkeit standhalten, und ist daher wartungsarm. Sie bleibt stabil und ist jederzeit spielbereit, wenn die Inspiration zuschlägt.`,
-        tags: ["Bass", "Nato"],
-        color: ["Schwarz", "Blau", "Braun", "Rot"],
+          "Eine erschwingliche Wahl für Musiker, die verschiedene E-Gitarren-Stile ausprobieren möchten",
+        description: `Die Modern Double-Cut Electric wurde als vielseitige E-Gitarre für Spieler entwickelt, die ihre Technik weiterentwickeln möchten. Der Double-Cutaway-Korpus ermöglicht einen komfortablen Zugang zu den höheren Bünden und bleibt sowohl im Sitzen als auch im Stehen ausgewogen.
+
+Die vielseitige Tonabnehmerkonfiguration ermöglicht den Wechsel zwischen klaren Akkorden, verzerrten Rhythmusklängen und ausdrucksstarken Soli. Das komfortable Halsprofil erleichtert zudem schnelle Lagenwechsel.`,
+        descriptionTwo:
+          "Eine praktische und erschwingliche E-Gitarre für Schüler, Hobbymusiker und alle, die ein zuverlässiges Zweitinstrument suchen.",
+        tags: ["E-Gitarre", "6 Saiten"],
+        color: ["Schwarz", "Blau"],
       },
     ],
   },

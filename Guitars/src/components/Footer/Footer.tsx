@@ -61,8 +61,8 @@ export default function Footer(props: PropsFooter) {
           alt="Image Payment"
           src="/images/payment.webp"
           priority={false}
-          width={100}
-          height={24}
+          width={1000}
+          height={250}
         />
       </div>
     </footer>

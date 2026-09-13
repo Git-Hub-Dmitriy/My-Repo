@@ -1,5 +1,65 @@
 @layer components {
   .policy {
     width: 100%;
+    padding: 20px 15px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    row-gap: 20px;
+    justify-items: start;
+    align-items: center;
+    .policy__mainTitle {
+      width: 100%;
+      font-size: 1.375em;
+      font-weight: 400;
+      color: var(--primary-hover-color);
+    }
+    .policy__innerRules {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-auto-rows: auto;
+      justify-items: start;
+      align-items: center;
+      row-gap: 15px;
+      .policy__title {
+        font-size: 1.125em;
+        font-weight: 400;
+        color: var(--primary-hover-color);
+        text-transform: capitalize;
+      }
+      .policy__subtitle {
+        font-size: 0.875em;
+        font-weight: 500;
+        line-height: 20px;
+        color: var(--secondary-light-color);
+      }
+      .policy__text {
+        font-size: 0.875em;
+        font-weight: 300;
+        line-height: 20px;
+        color: var(--secondary-light-color);
+      }
+    }
+  }
+  @container (min-width: 768px) {
+    .policy {
+      padding-block: clamp(20px, 2.34cqw, 60px);
+      padding-inline: clamp(30px, 7.81cqw, 200px);
+      row-gap: clamp(20px, 1.95cqw, 50px);
+      .policy__innerRules {
+        row-gap: clamp(15px, 0.781cqw, 20px);
+      }
+    }
+  }
+  @container (min-width: 2000px) {
+    .policy {
+      font-size: 1.2rem;
+    }
+  }
+  @container (min-width: 2300px) {
+    .policy {
+      font-size: 1.6rem;
+    }
   }
 }

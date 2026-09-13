@@ -1,6 +1,5 @@
 import styles from "./Home.module.css";
 import { Suspense } from "react";
-import dynamic from "next/dynamic";
 import Features from "./Features/Features";
 import Banner from "./Banner/Banner";
 import { Dictionary } from "@interfaces/dictionary.types";
@@ -8,13 +7,11 @@ import OurProducts from "./OurProducts/OurProducts";
 import Bestseller from "./Bestseller/Bestseller";
 import LatestDynamic from "./LatestNews/LatestDynamic";
 import SkeletonLatestNews from "./LatestNews/SkeletonLatestNews/SkeletonLatestNews";
-const Testimonials = dynamic(() => import("./Testimonials/Testimonials"));
-const Brands = dynamic(() => import("./Brands/Brands"));
-const Subscribe = dynamic(
-  () => import("@components/forms/Subscribe/Subscribe"),
-);
+import Testimonials from "./Testimonials/Testimonials";
+import Brands from "./Brands/Brands";
+import Subscribe from "@components/forms/Subscribe/Subscribe";
 interface PropsHome {
-  dict: Dictionary;
+  translate: Dictionary;
   product: React.ReactNode;
   locale: string;
 }
@@ -22,23 +19,23 @@ interface PropsHome {
 export default function Home(props: PropsHome) {
   return (
     <main className={styles.home}>
-      <Banner />
-      <Features dictionary={props.dict.pages.home.features} />
-      <Bestseller dict={props.dict.pages.home.bestseller} />
+      <Banner translate={props.translate.pages.home.banners} />
+      <Features translate={props.translate.pages.home.features} />
+      <Bestseller translate={props.translate.pages.home.bestseller} />
       <OurProducts
-        dict={props.dict.pages.home.ourProduct}
+        translate={props.translate.pages.home.ourProduct}
         product={props.product}
         locale={props.locale}
       />
-      <Testimonials dict={props.dict.pages.home.testimonials} />
+      <Testimonials translate={props.translate.pages.home.testimonials} />
       <Brands />
       <Suspense fallback={<SkeletonLatestNews />}>
         <LatestDynamic
           locale={props.locale}
-          dict={props.dict.pages.home.latestNews}
+          translate={props.translate.pages.home.latestNews}
         />
       </Suspense>
-      <Subscribe dict={props.dict.components.subscribe} />
+      <Subscribe translate={props.translate.components.subscribe} />
     </main>
   );
 }

@@ -2,19 +2,25 @@
   .product {
     width: 100%;
     .product__wrapper {
-      padding: 20px 15px;
+      padding: 20px 15px 0 15px;
     }
   }
   @container (min-width: 768px) {
     .product .product__wrapper {
-      padding-block: clamp(30px, 2.34cqw, 60px);
+      padding-top: clamp(30px, 2.34cqw, 60px);
       padding-inline: 30px;
       .product__container {
         display: grid;
         grid-template-columns: 50% auto;
         column-gap: clamp(30px, 2.34cqw, 60px);
-        justify-content: center;
+        justify-items: center;
+        align-items: start;
         margin-bottom: clamp(30px, 2.34cqw, 60px);
+      }
+      .product__container_two {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
       }
     }
   }

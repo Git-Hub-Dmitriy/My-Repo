@@ -12,7 +12,7 @@
     "studio": "npx prisma studio",
     "seed": "npx prisma db seed",
     "generate": "npx prisma generate",
-    "migrate": "npx prisma migrate",
+    "migrate": "npx prisma migrate deploy",
     "reset": "npx prisma migrate reset --force && npx prisma generate && npx prisma db seed",
     "db-push": "npx prisma db push",
     "docker": "docker compose up --build",

@@ -184,6 +184,11 @@
       }
     }
   }
+  @container (min-width: 1440px) {
+    .footer {
+      padding-inline: clamp(30px, 7.81cqw, 200px);
+    }
+  }
   @container (min-width: 2000px) {
     .footer {
       font-size: 1.2rem;

@@ -26,6 +26,8 @@
           position: relative;
           .brands__image {
             object-fit: contain;
+            width: 100px;
+            height: 60px;
           }
         }
       }
@@ -47,8 +49,8 @@
   }
   @container (min-width: 2000px) {
     .brands .brands__viewport .brands__container .brands__slide .brands__image {
-      width: 180px;
-      height: 90px;
+      width: 160px;
+      height: 80px;
     }
   }
 }

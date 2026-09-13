@@ -1,3 +1,3 @@
-export default function home() {
-  return null;
-}
+import Home from "./layout";
+
+export default Home;

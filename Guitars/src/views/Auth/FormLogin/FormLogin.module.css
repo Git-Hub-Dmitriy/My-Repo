@@ -169,6 +169,60 @@
           line-height: 20px;
           width: 100%;
           text-align: start;
+          transition: color 0.4s ease;
+          &:hover {
+            color: var(--secondary-color);
+          }
+        }
+      }
+    }
+  }
+  @container (min-width: 768px) {
+    .login {
+      padding-top: clamp(20px, 2.43cqw, 60px);
+      padding-inline: clamp(30px, 7.81cqw, 200px);
+      .login__wrapper {
+        row-gap: clamp(10px, 1.171cqw, 30px);
+        .login__innerData {
+          padding: clamp(20px, 1.56cqw, 40px);
+          row-gap: clamp(10px, 1.171cqw, 30px);
+          .login__innerInput {
+            row-gap: clamp(8px, 0.781cqw, 20px);
+            .login__input {
+              border: 2px solid var(--border-color);
+            }
+            .login__subtitle {
+              font-size: 1em;
+            }
+            .login__innerPassword {
+              .login__input {
+                border: 2px solid var(--border-color);
+              }
+              .login__iconEye {
+                width: clamp(15px, 0.97cqw, 25px);
+                height: clamp(15px, 0.97cqw, 25px);
+              }
+            }
+          }
+          .login__wrapBtn {
+            row-gap: clamp(8px, 0.781cqw, 20px);
+            .login__innerRemember {
+              column-gap: clamp(6px, 0.58cqw, 15px);
+              .login__checkbox {
+                width: clamp(13px, 0.781cqw, 20px);
+                height: clamp(13px, 0.781cqw, 20px);
+                &:checked::after {
+                  left: clamp(3px, 0.195cqw, 5px);
+                  width: clamp(5px, 0.31cqw, 8px);
+                  height: clamp(10px, 0.468cqw, 12px);
+                }
+              }
+            }
+            .login__btnLogin {
+              padding-block: clamp(10px, 0.781cqw, 20px);
+              padding-inline: clamp(25px, 1.95cqw, 50px);
+            }
+          }
         }
       }
     }

@@ -110,6 +110,81 @@ export const de: Dictionary = {
         },
       },
     },
+    about: {
+      description: {
+        url: "/images/about-us-1.webp",
+        title: "Über uns",
+        subtitle: "Wer wir sind",
+        description:
+          "Hier beginnt dein Sound. Wir haben Guitro ins Leben gerufen, damit jeder Gitarrist – vom Anfänger, der seine erste Akustikgitarre aussucht, bis zum erfahrenen Profi auf der Bühne – ein Instrument mit dem perfekten Klang findet. Unser Sortiment umfasst E-Gitarren, Akustikgitarren, Bässe sowie das gesamte wichtige Equipment für Studio und Bühne. Wir verkaufen nicht einfach nur Gitarren; wir helfen dir dabei, deinen ganz eigenen Sound zu finden.",
+      },
+      service: {
+        title: "Unsere Leistungen",
+        list: [
+          {
+            url: "/icons/iconLamp.svg",
+            title: "Kreative Ideen",
+            description:
+              "Entdecken Sie neue Sounds, experimentieren Sie mit verschiedenen Klangfarben und finden Sie die Gitarre, die Ihre musikalischen Ideen zum Leben erweckt. Von klassischen Stilen bis hin zu modernen Setups – wir sind hier, um Sie zu Ihrem nächsten Riff, Song oder Auftritt zu inspirieren.",
+          },
+          {
+            url: "/icons/iconMonitor.svg",
+            title: "Webentwicklung",
+            description:
+              "Wir haben einen schnellen, modernen Online-Shop entwickelt, der das Entdecken und Kaufen von Gitarren einfach und angenehm macht. Von der reibungslosen Navigation bis hin zum Responsive Design ist das gesamte Erlebnis für Musiker optimiert – auf jedem Gerät.",
+          },
+          {
+            url: "/icons/iconHeart.svg",
+            title: "Mit Leidenschaft hergestellt",
+            description:
+              "Wir lieben Gitarren und die Musik, die mit ihnen entsteht. Unser gesamtes Geschäft ist auf die Bedürfnisse von Musikern ausgerichtet – von der Entdeckung Ihres nächsten Instruments bis hin zur Suche nach dem perfekten Sound.",
+          },
+          {
+            url: "/icons/iconGears.svg",
+            title: "Leistungsstarke Optionen",
+            description:
+              "Entdecke verschiedene Gitarren, Ausrüstung und Zubehör, um ein Setup zusammenzustellen, das zu deinem Stil passt und dir hilft, den gewünschten Sound zu erzielen.",
+          },
+          {
+            url: "/icons/iconSnow.svg",
+            title: "Einzigartiges Design",
+            description:
+              "Jede Gitarre hat ihren eigenen Charakter. Entdecken Sie Instrumente mit unverwechselbarem Design, speziellen Lackierungen und Details, die Ihren Stil zu etwas ganz Persönlichem machen.",
+          },
+          {
+            url: "/icons/iconMonitor.svg",
+            title: "Anpassbare Optionen",
+            description:
+              "Entdecken Sie Produkte, vergleichen Sie Ihre Optionen und finden Sie die Ausrüstung, die zu Ihrem Stil passt. Unser Online-Shop macht es Ihnen leicht, sich ein Setup zusammenzustellen, das ganz individuell zu Ihnen passt.",
+          },
+        ],
+      },
+      team: {
+        title: "Unser Team",
+        list: [
+          {
+            url: "/images/team/team-2.webp",
+            name: "Michael Brooks",
+            position: "Gründer & Gitarrenexperte",
+          },
+          {
+            url: "/images/team/team-1.webp",
+            name: "Sophie Bennett",
+            position: "Manager für Kundenerlebnisse",
+          },
+          {
+            url: "/images/team/team-3.webp",
+            name: "Lukas Steiner",
+            position: "Produktspezialist",
+          },
+          {
+            url: "/images/team/team-4.webp",
+            name: "Emma Sullivan",
+            position: "Kreativ- und Webdirektor",
+          },
+        ],
+      },
+    },
   },
   components: {
     header: {

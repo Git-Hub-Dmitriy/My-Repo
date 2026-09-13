@@ -79,6 +79,30 @@ export interface Dictionary {
         };
       };
     };
+    about: {
+      description: {
+        title: string;
+        subtitle: string;
+        description: string;
+        url: string;
+      };
+      service: {
+        title: string;
+        list: Array<{
+          url: string;
+          title: string;
+          description: string;
+        }>;
+      };
+      team: {
+        title: string;
+        list: Array<{
+          url: string;
+          name: string;
+          position: string;
+        }>;
+      };
+    };
   };
   components: {
     header: {

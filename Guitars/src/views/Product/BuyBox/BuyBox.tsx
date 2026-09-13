@@ -4,12 +4,10 @@ import AddWishlist from "@components/buttons/AddWishlist/AddWishlist";
 import { Dictionary } from "@interfaces/dictionary.types";
 import getProduct from "@services/internal/getProduct";
 import { notFound } from "next/navigation";
-import dynamic from "next/dynamic";
 import Rating from "@components/Rating/Rating";
-const Counter = dynamic(() => import("./Counter/Counter"));
-
+import Counter from "./Counter/Counter";
 interface PropsBuyBox {
-  dict: Dictionary;
+  translate: Dictionary;
   sku: string;
   locale: string;
 }
@@ -48,12 +46,12 @@ export default async function BuyBox(props: PropsBuyBox) {
       <h2 className={styles.buyBox__subtitle}>{product.translation.title}</h2>
       <div className={styles.buyBox__wapQuanity}>
         <h2 className={styles.buyBox__quanity}>
-          {props.dict.pages.product.quanity}
+          {props.translate.pages.product.quanity}
         </h2>
         <div className={styles.buyBox__innerQuanity}>
           <Counter />
           <AddCart
-            dict={props.dict.components.buttons.btnAddCart}
+            dict={props.translate.components.buttons.btnAddCart}
             variant="addCart_secondary"
             product={product.sku}
           />
@@ -63,14 +61,14 @@ export default async function BuyBox(props: PropsBuyBox) {
           <div className={styles.buyBox__innerSku}>
             <b
               className={styles.buyBox__skuName}
-            >{`${props.dict.pages.product.sku} `}</b>
+            >{`${props.translate.pages.product.sku} `}</b>
             <h2 className={styles.buyBox__sku}>{product.sku}</h2>
           </div>
           <div className={styles.buyBox__categories}>
             <h2 className={styles.buyBox__category}>
               <b
                 className={styles.buyBox__CategoryName}
-              >{`${props.dict.pages.product.category} `}</b>
+              >{`${props.translate.pages.product.category} `}</b>
               {categories}
             </h2>
           </div>
@@ -78,7 +76,7 @@ export default async function BuyBox(props: PropsBuyBox) {
         <div className={styles.buyBox__innerTags}>
           <b
             className={styles.buyBox__tagName}
-          >{`${props.dict.pages.product.tags} `}</b>
+          >{`${props.translate.pages.product.tags} `}</b>
           <h2 className={styles.buyBox__tag}>
             {product.translation.tags.map((item) => item).join(", ")}
           </h2>

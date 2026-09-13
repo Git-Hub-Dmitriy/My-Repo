@@ -110,6 +110,81 @@ export const en: Dictionary = {
         },
       },
     },
+    about: {
+      description: {
+        url: "/images/about-us-1.webp",
+        title: "About Us",
+        subtitle: "Who We Are",
+        description:
+          "Your sound starts here We created Guitro so that every guitarist—from a beginner picking out their first acoustic to a seasoned gigging pro—could find an instrument with the perfect sound. Our catalog features electric guitars, acoustics, basses, and all the essential gear for the studio and the stage. We don’t just sell guitars; we help you find your unique tone.",
+      },
+      service: {
+        title: "Our Services",
+        list: [
+          {
+            url: "/icons/iconLamp.svg",
+            title: "Creative Ideas",
+            description:
+              "Discover new sounds, experiment with different tones, and find the guitar that brings your musical ideas to life. From classic styles to modern setups, we’re here to inspire your next riff, song, or performance.",
+          },
+          {
+            url: "/icons/iconMonitor.svg",
+            title: "Web Development",
+            description:
+              "We built a fast, modern online store designed to make discovering and buying guitars simple and enjoyable. From smooth navigation to responsive design, every part of the experience is optimized for musicians on any device.",
+          },
+          {
+            url: "/icons/iconHeart.svg",
+            title: "Made With Passion",
+            description:
+              "We’re passionate about guitars and the music they create. Every part of our store is designed with musicians in mind — from discovering your next instrument to finding the perfect sound.",
+          },
+          {
+            url: "/icons/iconGears.svg",
+            title: "Powerfull Options",
+            description:
+              "Explore different guitars, gear, and accessories to create a setup that matches your style and helps you get the sound you’re looking for.",
+          },
+          {
+            url: "/icons/iconSnow.svg",
+            title: "Unique Design",
+            description:
+              "Every guitar has its own character. Discover instruments with distinctive designs, finishes, and details that make your style truly your own.",
+          },
+          {
+            url: "/icons/iconMonitor.svg",
+            title: "Customizable Options",
+            description:
+              "Explore products, compare your options, and find the gear that fits your style. Our online store makes it easy to create a setup that feels uniquely yours.",
+          },
+        ],
+      },
+      team: {
+        title: "Our Team",
+        list: [
+          {
+            url: "/images/team/team-2.webp",
+            name: "Michael Brooks",
+            position: "Founder & Guitar Expert",
+          },
+          {
+            url: "/images/team/team-1.webp",
+            name: "Sophie Bennett",
+            position: "Customer Experience Manager",
+          },
+          {
+            url: "/images/team/team-3.webp",
+            name: "Lukas Steiner",
+            position: "Product Specialist",
+          },
+          {
+            url: "/images/team/team-4.webp",
+            name: "Emma Sullivan",
+            position: "Creative & Web Director",
+          },
+        ],
+      },
+    },
   },
   components: {
     header: {

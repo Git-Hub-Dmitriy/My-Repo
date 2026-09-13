@@ -11,7 +11,7 @@ type ProductBase = Omit<Product, "price" | "oldPrice"> & {
   price: number;
   oldPrice: number | null;
 };
-type TranslationsData = Omit<ProductTranslation, "id" | "productId" | "locale">;
+type TranslationsData = Omit<ProductTranslation, "id" | "locale">;
 type FlattenedProduct = ProductBase & TranslationsData;
 
 interface PropsCard {

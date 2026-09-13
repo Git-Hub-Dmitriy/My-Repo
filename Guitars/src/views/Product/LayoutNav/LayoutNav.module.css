@@ -1,18 +1,18 @@
 @layer components {
-  .layoutRoutes {
+  .layoutNav {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
     background-color: var(--primary-color);
-    .layoutRoutes__routes {
+    .layoutNav__routes {
       width: 100%;
       display: flex;
       flex-direction: column;
       justify-items: center;
       align-items: center;
-      .layoutRoutes__link {
+      .layoutNav__link {
         width: 100%;
         text-align: center;
         line-height: 20px;
@@ -41,7 +41,7 @@
         &:hover::after {
           transform: scaleX(1);
         }
-        &.layoutRoutes__link_active {
+        &.layoutNav__link_active {
           color: var(--secondary-color);
           &::after {
             content: "";
@@ -56,18 +56,18 @@
         }
       }
     }
-    .layoutRoutes__line {
+    .layoutNav__line {
       width: 100%;
       height: 1px;
       background-color: var(--border-color);
     }
   }
   @container (min-width: 768px) {
-    .layoutRoutes .layoutRoutes__routes {
+    .layoutNav .layoutNav__routes {
       flex-direction: row;
       column-gap: clamp(20px, 1.953cqw, 50px);
       justify-content: center;
-      .layoutRoutes__link {
+      .layoutNav__link {
         width: auto;
         padding-block: clamp(10px, 1.56cqw, 40px);
       }

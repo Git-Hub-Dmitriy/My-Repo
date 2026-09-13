@@ -1,6 +1,4 @@
-import ProductInformation from "@views/Product/LayoutRoutes/routing/ProductInformation/ProductInformation";
-import SkeletonProductInformation from "@views/Product/LayoutRoutes/routing/ProductInformation/SkeletonProductInformation/SkeletonProductInformation";
-import { Suspense } from "react";
+import ProductInformation from "@views/Product/routing/ProductInformation/ProductInformation";
 import { Dictionary } from "@interfaces/dictionary.types";
 import { getDictionary } from "@utils/getDictionary";
 
@@ -14,13 +12,7 @@ export default async function information({
 
   return (
     <>
-      <Suspense fallback={<SkeletonProductInformation />}>
-        <ProductInformation
-          sku={sku}
-          locale={locale}
-          dict={dict.pages.product}
-        />
-      </Suspense>
+      <ProductInformation sku={sku} locale={locale} dict={dict.pages.product} />
     </>
   );
 }

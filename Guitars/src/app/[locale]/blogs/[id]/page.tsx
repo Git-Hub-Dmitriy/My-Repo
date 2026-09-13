@@ -1,15 +1,24 @@
 import Post from "@views/Post/Post";
+import { Suspense, use } from "react";
 
-export default async function post({
+function PostContent({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: Promise<{ locale: string; id: string }>;
 }) {
-  const { id } = await params;
+  const { locale, id } = use(params);
 
+  return <Post id={id} />;
+}
+
+export default function post({
+  params,
+}: {
+  params: Promise<{ id: string; locale: string }>;
+}) {
   return (
-    <>
-      <Post id={id} />
-    </>
+    <Suspense fallback={null}>
+      <PostContent params={params} />
+    </Suspense>
   );
 }

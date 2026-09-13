@@ -1,18 +1,17 @@
 "use client";
 import classNames from "classnames";
-import styles from "./LayoutRoutes.module.css";
+import styles from "./LayoutNav.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { PageDict } from "@interfaces/dictionary.types";
 
-interface PropsLayoutRoutes {
-  routes: React.ReactNode;
+interface PropsLayoutNav {
   sku: string;
   locale: string;
   dict: PageDict<"product">;
 }
 
-export default function LayoutRoutes(props: PropsLayoutRoutes) {
+export default function LayoutNav(props: PropsLayoutNav) {
   const pathname = usePathname();
   const basePath = `/${props.locale}/shop/${props.sku}`;
   const isActive = (segment: string) => {
@@ -24,12 +23,12 @@ export default function LayoutRoutes(props: PropsLayoutRoutes) {
   };
 
   return (
-    <section className={styles.layoutRoutes}>
-      <nav className={styles.layoutRoutes__routes}>
+    <section className={styles.layoutNav}>
+      <nav className={styles.layoutNav__routes}>
         <Link
           className={classNames(
-            styles.layoutRoutes__link,
-            isActive("description") && styles.layoutRoutes__link_active,
+            styles.layoutNav__link,
+            isActive("description") && styles.layoutNav__link_active,
           )}
           href={`${basePath}/description`}
         >
@@ -37,8 +36,8 @@ export default function LayoutRoutes(props: PropsLayoutRoutes) {
         </Link>
         <Link
           className={classNames(
-            styles.layoutRoutes__link,
-            isActive("information") && styles.layoutRoutes__link_active,
+            styles.layoutNav__link,
+            isActive("information") && styles.layoutNav__link_active,
           )}
           href={`${basePath}/information`}
         >
@@ -46,16 +45,15 @@ export default function LayoutRoutes(props: PropsLayoutRoutes) {
         </Link>
         <Link
           className={classNames(
-            styles.layoutRoutes__link,
-            isActive("reviews") && styles.layoutRoutes__link_active,
+            styles.layoutNav__link,
+            isActive("reviews") && styles.layoutNav__link_active,
           )}
           href={`${basePath}/reviews`}
         >
           {props.dict.routes.reviews.reviewName}
         </Link>
       </nav>
-      <div className={styles.layoutRoutes__line}></div>
-      {props.routes}
+      <div className={styles.layoutNav__line}></div>
     </section>
   );
 }

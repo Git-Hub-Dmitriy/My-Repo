@@ -24,14 +24,13 @@ export default function OurProducts(props: PropsOurProducts) {
             item.href === "Featured"
               ? pathname === `/${props.locale}`
               : pathname.endsWith(item.href.toLowerCase());
-
+          const href =
+            item.href === "Featured"
+              ? `/${props.locale}`
+              : `/${props.locale}/${item.href.toLowerCase()}`;
           return (
             <Link
-              href={
-                item.href === "Featured"
-                  ? `/${props.locale}`
-                  : item.href.toLowerCase()
-              }
+              href={href}
               key={i}
               className={classNames(
                 styles.ourProducts__route,

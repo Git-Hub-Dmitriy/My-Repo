@@ -1,0 +1,40 @@
+@layer components {
+  .skeletonProductImages {
+    width: 100%;
+    height: clamp(430px, 95.703cqw, 735px);
+    background: linear-gradient(
+      -45deg,
+      var(--primary-color),
+      #252525,
+      var(--border-color),
+      #353536,
+      var(--border-color)
+    );
+    background-size: 400% 400%;
+    animation: gradient 2s ease infinite;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @container (min-width: 600px) {
+    .skeletonProductImages {
+      margin-inline: 40px;
+      width: auto;
+    }
+  }
+  @container (min-width: 768px) {
+    .skeletonProductImages {
+      height: clamp(442px, 42.96cqw, 1100px);
+      margin-inline: 0px;
+      width: 100%;
+    }
+  }
+}

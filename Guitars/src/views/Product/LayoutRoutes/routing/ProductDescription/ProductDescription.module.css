@@ -1,0 +1,35 @@
+@layer components {
+  .productDescription {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    .productDescription__title {
+      font-size: 1em;
+      font-weight: 400;
+      text-transform: capitalize;
+      color: var(--primary-hover-color);
+      line-height: 20px;
+    }
+    .productDescription__description {
+      font-size: 0.875em;
+      font-weight: 300;
+      line-height: 20px;
+      color: var(--secondary-light-color);
+    }
+  }
+  @container (min-width: 768px) {
+    .productDescription {
+      padding: clamp(15px, 2.34cqw, 60px);
+      row-gap: clamp(15px, 2.34cqw, 60px);
+      .productDescription__title {
+        line-height: clamp(20px, 1.56cqw, 40px);
+      }
+      .productDescription__description {
+        line-height: clamp(20px, 1.56cqw, 40px);
+      }
+    }
+  }
+}

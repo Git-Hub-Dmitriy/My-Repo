@@ -1,0 +1,36 @@
+@layer components {
+  .product {
+    width: 100%;
+    .product__wrapper {
+      padding: 20px 15px;
+    }
+  }
+  @container (min-width: 768px) {
+    .product .product__wrapper {
+      padding-block: clamp(30px, 2.34cqw, 60px);
+      padding-inline: 30px;
+      .product__container {
+        display: grid;
+        grid-template-columns: 50% auto;
+        column-gap: clamp(30px, 2.34cqw, 60px);
+        justify-content: center;
+        margin-bottom: clamp(30px, 2.34cqw, 60px);
+      }
+    }
+  }
+  @container (min-width: 1000px) {
+    .product .product__wrapper {
+      padding-inline: clamp(30px, 15.625cqw, 400px);
+    }
+  }
+  @container (min-width: 2000px) {
+    .product {
+      font-size: 1.2rem;
+    }
+  }
+  @container (min-width: 2300px) {
+    .product {
+      font-size: 1.6rem;
+    }
+  }
+}

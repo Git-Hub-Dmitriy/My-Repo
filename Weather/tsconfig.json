@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      },
+      { "name": "typescript-plugin-css-modules" }
+    ],
+    "paths": {
+      "@images/*": ["./public/images/*"],
+      "@icons/*": ["./public/icons/*"],
+      "@actions/*": ["./src/actions/*"],
+      "@app/*": ["./src/app/*"],
+      "@api/*": ["./src/app/api/*"],
+      "@components/*": ["./src/components/*"],
+      "@data/*": ["./src/data/*"],
+      "@fonts/*": ["./src/fonts/*"],
+      "@interfaces/*": ["./src/interfaces/*"],
+      "@services/*": ["./src/services/*"],
+      "@store/*": ["./src/store/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@views/*": ["./src/views/*"],
+      "@layout/*": ["./src/layout/*"]
+    }
+  },
+  "include": [
+    "src",
+    "src/interfaces",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts",
+    "**/*d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,160 @@
+@layer components {
+  .buyBox {
+    width: 100%;
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    padding-block: 20px;
+    .buyBox__wrapTitle {
+      width: 100%;
+      display: grid;
+      justify-items: start;
+      align-items: center;
+      grid-template-rows: auto auto auto;
+      row-gap: 10px;
+      margin-bottom: 15px;
+      .buyBox__title {
+        font-size: 1.125em;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: var(--primary-hover-color);
+      }
+      .buyBox__reviewLength {
+        font-size: 0.937em;
+        color: var(--secondary-light-color);
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 20px;
+      }
+    }
+    .buyBox__price {
+      font-size: 0.937em;
+      font-weight: 400;
+      color: var(--secondary-color);
+      margin-bottom: 15px;
+    }
+    .buyBox__subtitle {
+      font-size: 0.875em;
+      font-weight: 300;
+      color: var(--secondary-light-color);
+    }
+    .buyBox__wapQuanity {
+      display: grid;
+      width: 100%;
+      margin-top: 20px;
+      grid-template-rows: auto auto;
+      justify-items: start;
+      row-gap: 15px;
+      align-items: center;
+      .buyBox__quanity {
+        font-size: 0.875em;
+        font-weight: normal;
+        color: var(--primary-hover-color);
+      }
+      .buyBox__innerQuanity {
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+        column-gap: 20px;
+        justify-content: start;
+        align-items: center;
+      }
+      .buyBox__innerCategories {
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto auto;
+        row-gap: 10px;
+        justify-items: start;
+        align-items: center;
+        .buyBox__innerSku {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          column-gap: 5px;
+          .buyBox__skuName {
+            text-transform: uppercase;
+            font-size: 0.875em;
+            font-weight: 500;
+            color: var(--primary-hover-color);
+          }
+          .buyBox__sku {
+            font-size: 0.875em;
+            font-weight: 400;
+            color: var(--secondary-light-color);
+            text-transform: uppercase;
+          }
+        }
+        .buyBox__categories {
+          display: flex;
+          width: 100%;
+          flex-flow: row;
+          .buyBox__category {
+            font-size: 0.875em;
+            font-weight: 400;
+            color: var(--secondary-light-color);
+            text-transform: capitalize;
+            .buyBox__CategoryName {
+              margin-right: 5px;
+              text-transform: capitalize;
+              font-size: 0.875em;
+              font-weight: 500;
+              color: var(--primary-hover-color);
+            }
+          }
+        }
+      }
+      .buyBox__innerTags {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        .buyBox__tagName {
+          margin-right: 5px;
+          text-transform: capitalize;
+          font-size: 0.875em;
+          font-weight: 500;
+          color: var(--primary-hover-color);
+        }
+        .buyBox__tag {
+          font-size: 0.875em;
+          font-weight: 400;
+          color: var(--secondary-light-color);
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  @container (min-width: 768px) {
+    .buyBox {
+      padding: 0;
+      align-content: start;
+      .buyBox__wrapTitle {
+        row-gap: clamp(10px, 1.171cqw, 30px);
+        margin-bottom: clamp(15px, 1.171cqw, 30px);
+      }
+      .buyBox__price {
+        margin-bottom: clamp(15px, 1.171cqw, 30px);
+      }
+      .buyBox__wapQuanity {
+        margin-top: clamp(15px, 1.171cqw, 30px);
+        row-gap: clamp(15px, 1.171cqw, 30px);
+        .buyBox__innerQuanity {
+          column-gap: clamp(20px, 1.56cqw, 40px);
+        }
+        .buyBox__innerCategories {
+          row-gap: clamp(10px, 0.781cqw, 20px);
+          .buyBox__innerSku {
+            column-gap: clamp(5px, 0.39cqw, 10px);
+          }
+          .buyBox__category {
+            line-height: 30px;
+            .buyBox__CategoryName {
+              margin-right: clamp(5px, 0.39cqw, 10px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

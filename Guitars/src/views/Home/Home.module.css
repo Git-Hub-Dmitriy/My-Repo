@@ -1,0 +1,17 @@
+@layer components {
+  .home {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+  @container (min-width: 2000px) {
+    .home {
+      font-size: 1.2rem;
+    }
+  }
+  @container (min-width: 2300px) {
+    .home {
+      font-size: 1.6rem;
+    }
+  }
+}

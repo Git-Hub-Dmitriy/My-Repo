@@ -1,0 +1,49 @@
+@layer components {
+  .review {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: var(--primary-hover-color);
+    position: absolute;
+    left: 10px;
+    top: 33%;
+    transition: background-color 0.4s;
+    &:hover {
+      background-color: var(--secondary-color);
+      .review__icon {
+        fill: var(--primary-hover-color);
+      }
+    }
+    .review__icon {
+      width: 20px;
+      height: 20px;
+      fill: black;
+      transition: stroke 0.4s;
+    }
+  }
+  @container (min-width: 500px) {
+    .review {
+      top: 34%;
+    }
+  }
+  @container (min-width: 768px) {
+    .review {
+      left: 15px;
+      top: 32%;
+      width: clamp(30px, 1.95cqw, 50px);
+      height: clamp(30px, 1.95cqw, 50px);
+      .review__icon {
+        width: clamp(20px, 1.17cqw, 30px);
+        height: clamp(20px, 1.17cqw, 30px);
+      }
+    }
+  }
+  @container (min-width: 1400px) {
+    .review {
+      top: 35%;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@layer components {
+  .brands {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .brands__viewport {
+      overflow: hidden;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      .brands__container {
+        display: flex;
+        backface-visibility: hidden;
+        touch-action: pan-y;
+        .brands__slide {
+          background-color: var(--background-color);
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          flex: 0 0 50%;
+          min-width: 0;
+          padding: 15px 5px;
+          position: relative;
+          .brands__image {
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+  @container (min-width: 768px) {
+    .brands .brands__viewport {
+      .brands__container .brands__slide {
+        padding-block: clamp(20px, 3.125cqw, 80px);
+        padding-inline: clamp(20px, 3.9cqw, 100px);
+        flex: 0 0 50%;
+        .brands__image {
+          object-fit: contain;
+          width: 140px;
+          height: 60px;
+        }
+      }
+    }
+  }
+  @container (min-width: 2000px) {
+    .brands .brands__viewport .brands__container .brands__slide .brands__image {
+      width: 180px;
+      height: 90px;
+    }
+  }
+}

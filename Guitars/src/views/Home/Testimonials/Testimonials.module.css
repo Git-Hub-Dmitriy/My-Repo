@@ -1,0 +1,96 @@
+@layer components {
+  .testimonials {
+    width: 100%;
+    background-color: var(--primary-color);
+    display: grid;
+    justify-items: center;
+    align-items: start;
+    padding: 25px 15px;
+    row-gap: 20px;
+    position: relative;
+    .testimonials__title {
+      font-weight: 400;
+      color: var(--primary-hover-color);
+      font-size: 1.375em;
+    }
+    .testimonials__viewport {
+      overflow: hidden;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      .testimonials__container {
+        display: flex;
+        backface-visibility: hidden;
+        touch-action: pan-y;
+        .testimonials__slide {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          grid-template-columns: auto;
+          row-gap: 20px;
+          grid-template-rows: repeat(4, auto);
+          flex: 0 0 100%;
+          min-width: 0;
+          position: relative;
+          .testimonials__image {
+            object-fit: cover;
+            border-radius: 50%;
+          }
+          .testimonials__quote {
+            width: 35px;
+            height: 35px;
+            fill: grey;
+          }
+          .testimonials__text {
+            width: 80%;
+            text-align: center;
+            margin-top: -10px;
+            font-size: 0.875em;
+            color: var(--primary-hover-color);
+            font-weight: 300;
+            line-height: 30px;
+          }
+          .testimonials__name {
+            font-size: 1.125em;
+            color: var(--primary-hover-color);
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+  @container (min-width: 768px) {
+    .testimonials {
+      padding-block: clamp(30px, 4.788cqw, 120px);
+      row-gap: clamp(30px, 2.34cqw, 60px);
+      padding-inline: clamp(15px, 7.81cqw, 200px);
+      .testimonials__viewport .testimonials__container .testimonials__slide {
+        row-gap: clamp(30px, 2.34cqw, 60px);
+        .testimonials__image {
+          width: 150px;
+          height: 150px;
+        }
+        .testimonials__quote {
+          width: clamp(35px, 2.148cqw, 55px);
+          height: clamp(35px, 2.148cqw, 55px);
+        }
+        .testimonials__text {
+          line-height: clamp(25px, 1.757cqw, 45px);
+        }
+      }
+    }
+  }
+  @container (min-width: 2000px) {
+    .testimonials
+      .testimonials__viewport
+      .testimonials__container
+      .testimonials__slide
+      .testimonials__image {
+      width: 250px;
+      height: 250px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@layer components {
+  .readMore {
+    margin-top: 10px;
+    width: 40%;
+    padding: 6px 20px;
+    font-size: 0.812em;
+    transition: background-color 0.4s ease;
+    background-color: transparent;
+    font-weight: 400;
+    color: var(--primary-hover-color);
+    border: 2px solid var(--secondary-color);
+    cursor: pointer;
+    line-height: 20px;
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+  }
+  @container (min-width: 768px) {
+    .readMore {
+      margin-top: 20px;
+      padding: clamp(15px, 1.171cqw, 30px);
+    }
+  }
+}

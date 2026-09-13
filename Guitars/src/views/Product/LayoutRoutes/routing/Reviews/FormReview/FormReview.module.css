@@ -1,0 +1,191 @@
+@layer components {
+  .formReviews__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    .formReviews__innerTextarea {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-items: start;
+      align-items: center;
+      row-gap: 8px;
+      .formReviews__reviewText {
+        font-size: 0.875em;
+        font-weight: 400;
+        color: var(--primary-hover-color);
+        text-align: start;
+        width: 100%;
+        &::after {
+          content: " *";
+          color: #fd6262;
+          margin-left: 2px;
+          font-size: 0.875em;
+          font-weight: 300;
+        }
+      }
+      .formReviews__textarea {
+        width: 100%;
+        border: 1px solid var(--border-color);
+        resize: both;
+        background-color: inherit;
+        padding: 15px;
+        color: var(--primary-hover-color);
+        font-size: 0.875em;
+        font-weight: 400;
+        outline: none;
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus {
+          -webkit-box-shadow: 0 0 0 1000px transparent inset;
+          box-shadow: 0 0 0 1000px transparent inset;
+          -webkit-text-fill-color: inherit;
+        }
+      }
+    }
+    .formReviews__innerName {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      justify-items: center;
+      align-items: center;
+      .formReviews__name {
+        font-size: 0.875em;
+        font-weight: 400;
+        width: 100%;
+        text-align: start;
+        color: var(--primary-hover-color);
+        &::after {
+          content: " *";
+          color: #fd6262;
+          margin-left: 2px;
+          font-size: 0.875em;
+          font-weight: 300;
+        }
+      }
+      .formReviews__inputName {
+        width: 100%;
+        padding: 10px;
+        background-color: inherit;
+        font-size: 0.875em;
+        font-weight: 400;
+        color: var(--primary-hover-color);
+        outline: none;
+        border: 1px solid var(--border-color);
+      }
+    }
+    .formReviews__innerEmail {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      row-gap: 8px;
+      .formReviews__email {
+        font-size: 0.875em;
+        font-weight: 400;
+        width: 100%;
+        text-align: start;
+        color: var(--primary-hover-color);
+        &::after {
+          content: " *";
+          color: #fd6262;
+          margin-left: 2px;
+          font-size: 0.875em;
+          font-weight: 300;
+        }
+      }
+      .formReviews__inputEmail {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.875em;
+        font-weight: 400;
+        outline: none;
+        color: var(--primary-hover-color);
+        background-color: inherit;
+        border: 1px solid var(--border-color);
+      }
+    }
+    .formReviews__innerSaveBtn {
+      width: 100%;
+      display: grid;
+      grid-template-rows: auto auto;
+      justify-items: start;
+      align-items: center;
+      row-gap: 8px;
+      .formReviews__checkbox {
+        position: relative;
+        cursor: pointer;
+        width: 13px;
+        height: 13px;
+        user-select: none;
+        border: 2px solid transparent;
+        background-color: var(--secondary-color);
+        transition:
+          background-color 0.3s ease,
+          border 0.3s ease;
+        &:checked {
+          border: 2px solid var(--secondary-color);
+        }
+        &:checked::after {
+          content: "";
+          position: absolute;
+          top: -1px;
+          left: 2px;
+          width: 6px;
+          height: 10px;
+          border: 2px solid var(--primary-hover-color);
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+        }
+      }
+      .formReviews__saveText {
+        font-size: 0.875em;
+        font-weight: 400;
+        color: var(--primary-hover-color);
+        text-align: start;
+        width: 100%;
+      }
+      .formReviews__innerBtn {
+        width: 105px;
+      }
+    }
+  }
+  @container (min-width: 768px) {
+    .formReviews__form {
+      row-gap: clamp(15px, 1cqw, 30px);
+      .formReviews__innerTextarea {
+        row-gap: clamp(8px, 0.97cqw, 25px);
+      }
+      .formReviews__innerName {
+        row-gap: clamp(8px, 0.97cqw, 25px);
+      }
+      .formReviews__innerEmail {
+        row-gap: clamp(8px, 0.97cqw, 25px);
+      }
+      .formReviews__innerSaveBtn {
+        row-gap: clamp(8px, 0.97cqw, 25px);
+        .formReviews__checkbox {
+          width: clamp(13px, 0.781cqw, 20px);
+          height: clamp(13px, 0.781cqw, 20px);
+        }
+        .formReviews__innerBtn {
+          width: 20%;
+          max-width: 200px;
+        }
+      }
+    }
+  }
+  @container (min-width: 2300px) {
+    .formReviews__form .formReviews__innerSaveBtn .formReviews__checkbox {
+      &:checked::after {
+        top: 0px;
+        left: 4px;
+      }
+    }
+  }
+}

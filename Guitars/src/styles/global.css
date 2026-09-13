@@ -1,0 +1,16 @@
+@layer nullStyle, global, variables, commonClasses, components;
+@import "@styles/_nullstyle.css";
+@import "@styles/_variables.css";
+@import "@styles/commonClasses.css";
+
+@layer global {
+  body {
+    font-family: var(--rubik);
+    &::-webkit-scrollbar-thumb,
+    ::-webkit-scrollbar,
+    ::-webkit-scrollbar-track {
+      display: none;
+    }
+    background-color: var(--background-color);
+  }
+}

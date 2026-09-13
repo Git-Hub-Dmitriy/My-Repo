@@ -1,0 +1,88 @@
+@layer components {
+  .ourProducts {
+    width: 100%;
+    background-color: var(--background-color);
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    .ourProducts__title {
+      width: 100%;
+      font-size: 1.37em;
+      color: var(--primary-hover-color);
+      line-height: 22px;
+      font-weight: 400;
+      text-align: center;
+    }
+    .ourProducts__menu {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: auto;
+      justify-content: center;
+      align-items: center;
+      column-gap: 1px;
+      .ourProducts__route {
+        appearance: none;
+        outline: none;
+        text-decoration: none;
+        width: 100%;
+        cursor: pointer;
+        color: var(--secondary-light-color);
+        text-transform: capitalize;
+        padding: 5px;
+        font-size: 0.875em;
+        font-weight: 300;
+        position: relative;
+        display: inline-block;
+        transition: 0.4s color;
+        &:hover {
+          color: var(--secondary-color);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -4px;
+          width: 90%;
+          height: 2px;
+          background-color: var(--secondary-color);
+          transform: scaleX(0);
+          transform-origin: center;
+          transition: transform 0.4s ease-in-out;
+        }
+        &:hover::after {
+          transform: scaleX(1) translateX(5%);
+        }
+      }
+      .ourProducts__route_active {
+        transition: color 0.4s;
+        color: var(--secondary-color);
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -4px;
+          width: 90%;
+          height: 2px;
+          background-color: var(--secondary-color);
+          transform: scaleX(1) translateX(5%);
+        }
+      }
+    }
+  }
+  @container (min-width: 768px) {
+    .ourProducts {
+      padding-top: clamp(20px, 4.68cqw, 120px);
+      row-gap: clamp(10px, 0.781cqw, 20px);
+    }
+  }
+  @container (min-width: 1440px) {
+    .ourProducts .ourProducts__menu .ourProducts__route {
+      padding: clamp(10px, 0.781cqw, 20px);
+    }
+  }
+}

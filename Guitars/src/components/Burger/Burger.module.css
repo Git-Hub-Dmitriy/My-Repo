@@ -1,0 +1,113 @@
+@layer components {
+  .burger {
+    width: 16px;
+    height: 18px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    align-content: space-around;
+    cursor: pointer;
+    .burger__line {
+      width: 100%;
+      height: 2px;
+      background-color: var(--primary-hover-color);
+    }
+  }
+  .burger__modal {
+    position: fixed;
+    width: 100vw;
+    height: 100lvh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    user-select: none;
+    touch-action: none;
+    display: none;
+    background-color: var(--background-color);
+    justify-items: start;
+    align-content: start;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    .burger__innerTitle {
+      padding: 10px 20px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--secondary-color);
+      .burger__title {
+        user-select: none;
+        font-size: 1em;
+        font-weight: 500;
+        color: var(--primary-hover-color);
+        text-transform: uppercase;
+      }
+      .burger__btnClose {
+        user-select: none;
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        fill: white;
+        transition: fill 0.4s ease;
+        &:hover {
+          fill: black;
+        }
+      }
+    }
+    .burger__innerList {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-auto-rows: auto;
+      align-items: start;
+      justify-items: start;
+      .burger__link {
+        padding: 10px 20px;
+        font-size: 1em;
+        color: var(--secondary-light-color);
+        font-weight: 400;
+        text-transform: capitalize;
+        cursor: pointer;
+        transition: color 0.4s ease;
+        &:hover {
+          color: var(--secondary-color);
+        }
+      }
+    }
+  }
+  .burger__modal_active {
+    display: grid;
+    touch-action: auto;
+  }
+  .navigate {
+    display: none;
+    width: 100%;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: auto;
+    column-gap: 20px;
+    .navigate__link {
+      width: 100%;
+      padding-block: 15px;
+      text-transform: capitalize;
+      font-weight: 300;
+      color: var(--primary-hover-color);
+      font-size: 1em;
+    }
+  }
+  @container (min-width: 768px) {
+    .burger {
+      display: none;
+    }
+    .burger__modal {
+      display: none;
+    }
+    .navigate {
+      display: grid;
+    }
+  }
+}

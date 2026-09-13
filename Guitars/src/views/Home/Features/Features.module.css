@@ -1,0 +1,35 @@
+@layer components {
+  .features {
+    width: 100%;
+    margin-top: -1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 8px;
+    .features__title {
+      font-size: 0.7em;
+      display: grid;
+      text-align: center;
+      justify-items: center;
+      align-items: center;
+      line-height: 12px;
+      color: var(--primary-hover-color);
+      text-transform: uppercase;
+      font-weight: 300;
+      padding: 5px;
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+  }
+  @container (min-width: 768px) {
+    .features {
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: auto;
+      padding-block: clamp(10px, 1.171cqw, 30px);
+    }
+  }
+}

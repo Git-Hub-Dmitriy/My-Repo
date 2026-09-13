@@ -1,0 +1,44 @@
+@layer components {
+  .skeletonNavigateProduct {
+    width: 100%;
+    background: linear-gradient(
+      -45deg,
+      var(--primary-color),
+      #252525,
+      var(--border-color),
+      #353536,
+      var(--border-color)
+    );
+    padding-block: 15px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-size: 400% 400%;
+    animation: gradient 2s ease infinite;
+    .skeletonNavigateProduct__title {
+      width: 100%;
+      font-size: 0.937em;
+      color: var(--primary-hover-color);
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @container (min-width: 768px) {
+    .skeletonNavigateProduct {
+      padding-block: clamp(15px, 1.56cqw, 40px);
+    }
+  }
+}

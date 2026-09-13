@@ -1,0 +1,26 @@
+@layer components {
+  .rating {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    column-gap: 2px;
+    .rating__icon {
+      width: 14px;
+      height: 14px;
+      fill: var(--secondary-light-color);
+    }
+    .rating__icon_white {
+      fill: #b2b2b2;
+    }
+  }
+  @container (min-width: 768px) {
+    .rating {
+      column-gap: clamp(2px, 0.39cqw, 10px);
+      .rating__icon {
+        width: clamp(14px, 0.781cqw, 20px);
+        height: 20px;
+      }
+    }
+  }
+}

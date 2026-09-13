@@ -1,0 +1,17 @@
+@layer components {
+  .logo {
+    width: 100%;
+    .logo__image {
+      object-fit: contain;
+      aspect-ratio: 3 / 4;
+    }
+  }
+  @container (min-width: 768px) {
+    .logo {
+      .logo__image {
+        width: 200px;
+        height: 80px;
+      }
+    }
+  }
+}

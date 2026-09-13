@@ -1,0 +1,37 @@
+@layer components {
+  .productImages {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 20px;
+    grid-template-rows: auto auto;
+    background-color: var(--background-color);
+    .productImages__wrapImage {
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      align-items: start;
+      .productImages__image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+  @container (min-width: 600px) {
+    .productImages .productImages__wrapImage {
+      width: 80%;
+    }
+  }
+  @container (min-width: 768px) {
+    .productImages {
+      row-gap: 0;
+      grid-template-rows: auto;
+      .productImages__wrapImage {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

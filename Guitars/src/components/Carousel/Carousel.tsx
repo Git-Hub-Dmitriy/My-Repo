@@ -1,0 +1,66 @@
+"use client";
+
+import React, { useCallback } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import Image from "next/image";
+import styles from "./Carousel.module.css";
+
+interface PropsCarousel {
+  slides: Array<{ id: number; src: string; alt: string }>;
+}
+
+export default function Carousel(props: PropsCarousel) {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  if (!props.slides || props.slides.length === 0) return null;
+
+  return (
+    <div
+      style={{
+        position: "relative",
+        width: "100%",
+      }}
+    >
+      <div className={styles.carousel__viewport} ref={emblaRef}>
+        <div className={styles.carousel__container}>
+          {props.slides.map((slide, index) => (
+            <div className={styles.carousel__slide} key={slide.id}>
+              <Image
+                src={slide.src}
+                alt={slide.alt || "Slide image"}
+                fill
+                priority={index === 0}
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {props.slides.length > 1 && (
+        <>
+          <button
+            className={`${styles.carousel__button} ${styles.carousel__prev}`}
+            onClick={scrollPrev}
+          >
+            ‹
+          </button>
+          <button
+            className={`${styles.carousel__button} ${styles.carousel__next}`}
+            onClick={scrollNext}
+          >
+            ›
+          </button>
+        </>
+      )}
+    </div>
+  );
+}

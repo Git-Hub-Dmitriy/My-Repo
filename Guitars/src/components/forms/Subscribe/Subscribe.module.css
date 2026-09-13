@@ -1,0 +1,90 @@
+@layer components {
+  .subscribe {
+    width: 100%;
+    padding: 0 15px 30px 15px;
+    background-color: var(--primary-color);
+    justify-items: center;
+    .subscribe__title {
+      font-size: 1.375em;
+      color: var(--primary-hover-color);
+      font-weight: 400;
+      line-height: 22px;
+    }
+    .subscribe__text {
+      padding-top: 10px;
+      color: var(--secondary-light-color);
+      font-size: 0.875em;
+      font-weight: 300;
+      line-height: 20px;
+      width: 90%;
+      text-align: center;
+    }
+    .subscribe__form {
+      width: 100%;
+      border-radius: 30px;
+      background-color: var(--background-color);
+      margin-top: 15px;
+      height: 60px;
+      display: grid;
+      grid-template-columns: 65.5% auto;
+      .subscribe__input {
+        background-color: transparent;
+        outline: none;
+        appearance: none;
+        text-wrap: nowrap;
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: var(--primary-hover-color);
+        width: 100%;
+        padding: 5px 30px;
+        border-right: 1px solid var(--border-color);
+        border-radius: 30px 0 0 30px;
+        background-color: var(--background-color);
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 1000px transparent inset;
+          -webkit-text-fill-color: #ffffff;
+          caret-color: #ffffff;
+          transition: background-color 500000s ease-in-out 0s;
+        }
+      }
+      .subscribe__button {
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        background-color: transparent;
+        padding: 20px 12px;
+        border-radius: 0 30px 0 30px;
+        color: var(--secondary-color);
+        text-transform: capitalize;
+        font-size: 0.9375em;
+      }
+    }
+  }
+  @container (min-width: 768px) {
+    .subscribe {
+      padding-block: clamp(30px, 1.95cqw, 50px);
+      padding-inline: clamp(20px, 11.71cqw, 300px);
+      .subscribe__text {
+        margin-top: clamp(20px, 1.171cqw, 30px);
+        padding-top: 0px;
+      }
+      .subscribe__form {
+        margin-top: clamp(20px, 1.171cqw, 30px);
+        height: clamp(60px, 3.125cqw, 80px);
+        border-radius: 40px;
+        padding-inline: clamp(20px, 1.56cqw, 40px);
+        .subscribe__input {
+          border-radius: 40px 0 0 40px;
+        }
+        .subscribe__button {
+          border-radius: 40px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

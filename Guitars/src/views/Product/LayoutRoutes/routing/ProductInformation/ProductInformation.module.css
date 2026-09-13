@@ -1,0 +1,38 @@
+@layer components {
+  .productInfromation {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+    .productInfromation__color {
+      font-size: 0.875em;
+      font-weight: 700;
+      color: var(--primary-hover-color);
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      justify-items: start;
+      padding: 10px;
+      border: 1px solid var(--border-color);
+    }
+    .productInfromation__colors {
+      font-size: 0.875em;
+      font-weight: 300;
+      color: var(--secondary-light-color);
+      text-align: start;
+      border: 1px solid var(--border-color);
+      padding: 10px;
+    }
+  }
+  @container (min-width: 768px) {
+    .productInfromation {
+      padding: clamp(15px, 1.56cqw, 40px);
+      .productInfromation__color {
+        padding: clamp(10px, 0.781cqw, 20px);
+      }
+      .productInfromation__colors {
+        padding: clamp(10px, 0.781cqw, 20px);
+      }
+    }
+  }
+}

@@ -4,10 +4,8 @@ import Logo from "@components/Logo/Logo";
 import ShoppingCart from "@components/ShoppingCart/ShoppingCart";
 import Search from "@components/forms/Search/Search";
 import Burger from "@components/Burger/Burger";
-import dynamic from "next/dynamic";
 import { Suspense } from "react";
-
-const Lang = dynamic(() => import("@components/Lang/Lang"));
+import Lang from "@components/Lang/Lang";
 
 interface PropsHeaderBody {
   dictionary: ComponentDict<"header">;

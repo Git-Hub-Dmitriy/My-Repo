@@ -2,9 +2,8 @@ import styles from "./ProductReviews.module.css";
 import getProduct from "@services/internal/getProduct";
 import { ComponentDict, PageDict } from "@interfaces/dictionary.types";
 import Rating from "@components/Rating/Rating";
-import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
-const FormReview = dynamic(() => import("./FormReview/FormReview"));
+import FormReview from "./FormReview/FormReview";
 
 interface PropsProductReviews {
   sku: string;

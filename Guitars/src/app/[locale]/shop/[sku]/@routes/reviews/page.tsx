@@ -1,6 +1,4 @@
-import ProductReviews from "@views/Product/LayoutRoutes/routing/Reviews/ProductReviews";
-import SkeletonProductReviews from "@views/Product/LayoutRoutes/routing/Reviews/SkeletonProductReviews/SkeletonProductReviews";
-import { Suspense } from "react";
+import ProductReviews from "@views/Product/routing/Reviews/ProductReviews";
 import { Dictionary } from "@interfaces/dictionary.types";
 import { getDictionary } from "@utils/getDictionary";
 
@@ -14,14 +12,12 @@ export default async function reviews({
 
   return (
     <>
-      <Suspense fallback={<SkeletonProductReviews />}>
-        <ProductReviews
-          sku={sku}
-          locale={locale}
-          dict={dict.pages.product.routes.reviews}
-          dictComponent={dict.components.buttons.btnSubmit}
-        />
-      </Suspense>
+      <ProductReviews
+        sku={sku}
+        locale={locale}
+        dict={dict.pages.product.routes.reviews}
+        dictComponent={dict.components.buttons.btnSubmit}
+      />
     </>
   );
 }

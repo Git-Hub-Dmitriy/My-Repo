@@ -1,19 +1,11 @@
-import ProductDescription from "@views/Product/LayoutRoutes/routing/ProductDescription/ProductDescription";
-import { Suspense } from "react";
-import SkeletonProductDescription from "@views/Product/LayoutRoutes/routing/ProductDescription/SkeletonProductDescription/SkeletonProductDescription";
+import ProductDescription from "@views/Product/routing/ProductDescription/ProductDescription";
 
 export default async function description({
   params,
 }: {
   params: Promise<{ sku: string; locale: string }>;
 }) {
-  const { sku, locale } = await params;
+  const { locale, sku } = await params;
 
-  return (
-    <>
-      <Suspense fallback={<SkeletonProductDescription />}>
-        <ProductDescription sku={sku} locale={locale} />
-      </Suspense>
-    </>
-  );
+  return <ProductDescription sku={sku} locale={locale} />;
 }

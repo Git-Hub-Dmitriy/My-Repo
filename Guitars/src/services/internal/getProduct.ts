@@ -28,13 +28,11 @@ export default async function getProduct({
         where: { locale: locale },
       },
       reviews: reviews,
-      categories: categories
-        ? {
-            select: {
-              category: true,
-            },
-          }
-        : false,
+      categories: {
+        include: {
+          category: categories,
+        },
+      },
     },
   });
 

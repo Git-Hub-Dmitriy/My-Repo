@@ -2,45 +2,50 @@ import styles from "./Product.module.css";
 import NavigateProduct from "@views/Product/NavigateProduct/NavigateProduct";
 import ProductImages from "./ProductImages/ProductImages";
 import { Dictionary } from "@interfaces/dictionary.types";
-import { getDictionary } from "@utils/getDictionary";
-import dynamic from "next/dynamic";
-const LayoutRoutes = dynamic(() => import("./LayoutRoutes/LayoutRoutes"));
+import LayoutNav from "./LayoutNav/LayoutNav";
 import BuyBox from "./BuyBox/BuyBox";
 import { Suspense } from "react";
 import SkeletonNavigateProduct from "@views/Product/NavigateProduct/SkeletonNavigateProduct/SkeletonNavigateProduct";
 import SkeletonProductImages from "./ProductImages/SkeletonProductImages/SkeletonProductImages";
 import SkeletonBuyBox from "./BuyBox/SkeletonBuyBox/SkeletonBuyBox";
+import SkeletonLayoutNav from "./LayoutNav/SkeletonLayoutNav/SkeletonLayoutNav";
 
-export default async function Product({
-  params,
-  routes,
-}: {
-  params: Promise<{ locale: string; sku: string }>;
+interface PropsProduct {
+  locale: string;
+  sku: string;
   routes: React.ReactNode;
-}) {
-  const { locale, sku } = await params;
-  const dict: Dictionary = await getDictionary(locale);
+  translate: Dictionary;
+}
 
+export default function Product(props: PropsProduct) {
   return (
     <main className={styles.product}>
       <Suspense fallback={<SkeletonNavigateProduct />}>
-        <NavigateProduct locale={locale} sku={sku} />
+        <NavigateProduct locale={props.locale} sku={props.sku} />
       </Suspense>
       <div className={styles.product__wrapper}>
         <div className={styles.product__container}>
           <Suspense fallback={<SkeletonProductImages />}>
-            <ProductImages locale={locale} sku={sku} />
+            <ProductImages locale={props.locale} sku={props.sku} />
           </Suspense>
           <Suspense fallback={<SkeletonBuyBox />}>
-            <BuyBox sku={sku} dict={dict} locale={locale} />
+            <BuyBox
+              sku={props.sku}
+              translate={props.translate}
+              locale={props.locale}
+            />
           </Suspense>
         </div>
-        <LayoutRoutes
-          routes={routes}
-          sku={sku}
-          locale={locale}
-          dict={dict.pages.product}
-        />
+        <div className={styles.product__container}>
+          <Suspense fallback={<SkeletonLayoutNav />}>
+            <LayoutNav
+              sku={props.sku}
+              locale={props.locale}
+              dict={props.translate.pages.product}
+            />
+          </Suspense>
+          {props.routes}
+        </div>
       </div>
     </main>
   );

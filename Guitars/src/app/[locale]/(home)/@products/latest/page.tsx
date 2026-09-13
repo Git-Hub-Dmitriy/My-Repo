@@ -1,9 +1,6 @@
-import { Prisma } from "@generated/prisma/client";
-import { prisma } from "@lib/prisma";
-import ProductCarousel from "@views/Home/OurProducts/ProductCarousel/ProductCarousel";
-import Card from "@components/Card/Card";
 import { Dictionary } from "@interfaces/dictionary.types";
 import { getDictionary } from "@utils/getDictionary";
+import LatestProducts from "@views/Home/OurProducts/routing/LatestProducts";
 
 export default async function latest({
   params,
@@ -13,46 +10,11 @@ export default async function latest({
   const { locale } = await params;
   const dict: Dictionary = await getDictionary(locale);
 
-  const rawProducts: Prisma.ProductGetPayload<{
-    include: { translations: true };
-  }>[] = await prisma.product.findMany({
-    where: {
-      groups: {
-        has: "Latest",
-      },
-    },
-    include: {
-      translations: {
-        where: { locale: locale },
-      },
-    },
-  });
-  const latestProducts = rawProducts.map((product) => {
-    const { translations, price, oldPrice, ...dataProduct } = product;
-    const translation = translations[0];
-    const {
-      id: _tId,
-      productId: _pId,
-      locale: _loc,
-      ...translationFields
-    } = translation ?? {};
-    return {
-      ...dataProduct,
-      price: price.toNumber(),
-      oldPrice: oldPrice ? oldPrice.toNumber() : null,
-      ...translationFields,
-    };
-  });
-
   return (
-    <ProductCarousel>
-      {latestProducts.map((product) => (
-        <Card
-          dict={dict.components.buttons.btnAddCart}
-          key={product.id}
-          item={product}
-        />
-      ))}
-    </ProductCarousel>
+    <LatestProducts
+      locale={locale}
+      groups={"Latest"}
+      translate={dict.components.buttons}
+    />
   );
 }

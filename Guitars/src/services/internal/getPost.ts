@@ -1,12 +1,12 @@
 import { prisma } from "@lib/prisma";
 import { cacheLife, cacheTag } from "next/cache";
 
-interface OptionPosts {
+interface OptionPost {
   locale: string;
   id: number;
 }
 
-export default async function getPosts({ locale, id }: OptionPosts) {
+export default async function getPost({ locale, id }: OptionPost) {
   "use cache";
   cacheLife("hours");
   cacheTag("posts", `post-${id}`);

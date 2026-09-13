@@ -1,5 +1,19 @@
 @layer components {
   .about {
-    width: 1005;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: start;
+    flex-direction: column;
+    .about__wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 15px;
+      row-gap: 30px;
+      justify-items: center;
+      align-items: start;
+      background-color: var(--background-color);
+    }
   }
 }

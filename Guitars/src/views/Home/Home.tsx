@@ -1,6 +1,5 @@
 import styles from "./Home.module.css";
 import { Suspense } from "react";
-import dynamic from "next/dynamic";
 import Features from "./Features/Features";
 import Banner from "./Banner/Banner";
 import { Dictionary } from "@interfaces/dictionary.types";
@@ -8,11 +7,9 @@ import OurProducts from "./OurProducts/OurProducts";
 import Bestseller from "./Bestseller/Bestseller";
 import LatestDynamic from "./LatestNews/LatestDynamic";
 import SkeletonLatestNews from "./LatestNews/SkeletonLatestNews/SkeletonLatestNews";
-const Testimonials = dynamic(() => import("./Testimonials/Testimonials"));
-const Brands = dynamic(() => import("./Brands/Brands"));
-const Subscribe = dynamic(
-  () => import("@components/forms/Subscribe/Subscribe"),
-);
+import Testimonials from "./Testimonials/Testimonials";
+import Brands from "./Brands/Brands";
+import Subscribe from "@components/forms/Subscribe/Subscribe";
 interface PropsHome {
   dict: Dictionary;
   product: React.ReactNode;

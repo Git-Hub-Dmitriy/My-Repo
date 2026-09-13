@@ -1,4 +1,4 @@
-name: Next.js CI Check (Guitro)
+name: Next.js CI Check (Guitars)
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: "24"
           cache: "npm"
-          cache-dependency-path: ./Guitro/package-lock.json
+          cache-dependency-path: ./Guitars/package-lock.json
 
       - name: Install dependencies
         run: npm ci
